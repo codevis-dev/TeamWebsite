@@ -36,6 +36,14 @@ i {
   font-style: normal !important;
 }
 
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
 .arrow {
   font-family: "Font Awesome 5 Free";
   font-style: normal !important;
@@ -49,8 +57,12 @@ i {
   margin-left: auto;
 }
 
-.b1 {
-  padding: 18 66;
+.blue1 {
+  background-color: #192531;
+}
+
+.blue2 {
+  background-color: #21364a;
 }
 
 .button1 {
@@ -60,6 +72,22 @@ i {
   color: #ebebeb;
   background: #e65238;
   border-radius: 18px;
+  border: 0;
+}
+
+.button-scta {
+  width: 180px;
+  height: 46px;
+  color: #ebebeb;
+  background: #e65238;
+  border-radius: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+}
+
+.b1 {
+  padding: 18 66;
 }
 
 .catch-phrase {
@@ -92,13 +120,55 @@ i {
 }
 
 .kachel {
-  width: 30%;
-  height: 200px;
+  width: 28%;
+  height: 300px;
   border-style: hidden;
   border-radius: 12px;
-  background-color: lightblue;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.kachel-button {
+  width: 50%;
+  height: auto;
+  color: #21364a;
+  background: #a8dadc;
+  border-radius: 10px;
+  border: 0;
+  padding: 10px;
+}
+
+.kachel-image {
+  width: 100;
+  height: 80;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+}
+
+.kachel-top-margin {
+  margin-top: 50px;
+}
+
+.kachel-vert {
+  width: 28%;
+  height: 180px;
+  border-style: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ebebeb;
+  color: #21364a;
+}
+
+.kachel-vert-parent {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -125,18 +195,23 @@ i {
 .navbar button {
   width: 180px;
   height: 46px;
-
+  border: 0;
   color: #ebebeb;
   background: #e65238;
   margin: 0 20px;
 }
 
+.process-step {
+  padding: 50px 0;
+}
+
 .projects-col1 {
-  width: 40%;
+  width: 35%;
+  margin-right: 5%;
 }
 
 .projects-col2 {
-  width: 60%;
+  width: 65%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -145,7 +220,7 @@ i {
 
 .section {
   max-width: 920px;
-  padding: 50px 0;
+  padding: 100px 0;
   margin: auto;
 }
 
@@ -153,6 +228,11 @@ i {
   display: flex;
   flex-direction: row;
 }
+
+.silver {
+  background-color: silver;
+}
+
 .question {
   border-style: hidden;
   background-color: black;
