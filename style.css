@@ -212,6 +212,46 @@ button {
   width: 30%;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-left {
+  width: 45%;
+}
+
+.form-right {
+  width: 55%;
+}
+
+.full-height {
+  width: 100%;
+}
+
+.input {
+  width: 90%;
+  padding: 10px;
+  margin: 20px auto;
+  color: grey;
+  border-width: 1px;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 12px;
+  font-family: "Poppins" !important;
+}
+
+.input-large {
+  height: 418px;
+}
+
+.input-submit {
+  background-color: #e65238;
+  color: #ebebeb;
+  border-radius: 15px;
+  border-width: 0;
+}
+
 .gradient {
   background: linear-gradient(
     90deg,
@@ -318,7 +358,7 @@ button {
 }
 
 .logo-svg {
-  width: 80
+  width: 80;
 }
 
 .logo-text {
