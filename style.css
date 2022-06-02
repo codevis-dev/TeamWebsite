@@ -31,7 +31,7 @@ h3 {
 }
 
 h4 {
-  margin: 0 10px;
+  margin: 10 0px;
   font-weight: 700;
   font-size: 35;
 }
@@ -192,7 +192,7 @@ button {
 .footer {
   display: flex;
   flex-direction: row;
-  padding: 0 3%;
+  padding: 3% 3%;
 }
 
 .footer-column {
@@ -390,6 +390,20 @@ button {
   padding: 50px 0;
 }
 
+.project {
+  width: 90%;
+  border-radius: 40px;
+  padding: 50px;
+}
+
+.project-left {
+  width: 60%;
+}
+
+.project-right {
+  width: 40%;
+}
+
 .question {
   border-style: hidden;
   background-color: black;
@@ -421,6 +435,15 @@ button {
 
 .silver {
   background-color: silver;
+}
+
+.story-left {
+  width: 40%;
+  margin-right: 100px;
+}
+
+.story-right {
+  width: 60%;
 }
 
 .white {
