@@ -189,6 +189,11 @@ button {
   width: 50%;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -444,6 +449,24 @@ button {
 
 .story-right {
   width: 60%;
+}
+
+.team {
+  width: 43%;
+  margin: 0 0 50px 0;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.team-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-header {
+  padding-left: 25px;
 }
 
 .white {
