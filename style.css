@@ -342,9 +342,12 @@ button {
   margin-top: -30px;
 }
 
-.kachel-vert {
+.kachel-group {
   width: 28%;
-  height: 180px;
+}
+
+.kachel-vert {
+  width: 100%;
   border-style: hidden;
   border-radius: 20px;
   display: flex;
@@ -380,6 +383,13 @@ button {
   position: relative;
   left: 15px;
   top: 15px;
+}
+
+.icon-top {
+  left: -15px;
+  top: 40px;
+  width: 56px;
+  height: 56px;
 }
 
 .location {
