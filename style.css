@@ -106,10 +106,6 @@ button {
   margin-bottom: 50px;
 }
 
-.align-right {
-  text-align: right;
-}
-
 .arrow {
   font-family: "Font Awesome 5 Free";
   font-style: normal !important;
@@ -197,14 +193,29 @@ button {
   width: 50%;
 }
 
+.ellipse {
+  height: 100px;
+  width: 100%;
+  border-radius: 75%;
+  margin-bottom: -50px;
+}
+
+.ellipse-fix {
+  padding-bottom: 50px;
+  margin-bottom: -50px;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
 }
 
 .footer {
+  width: 85%;
+  margin: auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 3% 3%;
 }
 
@@ -214,15 +225,15 @@ button {
 }
 
 .footer-col1 {
-  width: 40%;
+  width: 26%;
 }
 
 .footer-col2 {
-  width: 30%;
+  width: 10%;
 }
 
 .footer-col3 {
-  width: 30%;
+  width: 15%;
 }
 
 .form {
@@ -440,6 +451,16 @@ button {
   padding: 50px 0;
 }
 
+.process-step-right {
+  text-align: left;
+  margin-left: 70%;
+}
+
+.process-step-left {
+  text-align: right;
+  width: 30%;
+}
+
 .project {
   width: 90%;
   border-radius: 40px;
@@ -452,6 +473,8 @@ button {
 
 .project-right {
   width: 40%;
+  width: 350px;
+  height: 300px;
 }
 
 .benefit-heading {
