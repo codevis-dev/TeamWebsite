@@ -321,7 +321,8 @@ button {
 
 .kachel-col1 {
   width: 30%;
-  margin-right: 5%;
+  margin-right: 3%;
+  margin-left: 2%;
   z-index: 2;
 }
 
@@ -578,7 +579,7 @@ button {
   opacity: 0.5;
 }
 
-@media only screen and (max-width: 1320px) {
+@media only screen and (max-width: 1280px) {
   .section {
     max-width: 780px;
   }
@@ -611,4 +612,7 @@ button {
   .kachel-top-margin-benefit {
     margin-top: -30px;
   }
+}
+
+@media only screen and (max-width: 780px) {
 }
