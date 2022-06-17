@@ -322,6 +322,7 @@ button {
 .kachel-col1 {
   width: 30%;
   margin-right: 5%;
+  z-index: 2;
 }
 
 .kachel-col2 {
@@ -330,6 +331,7 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .kachel-image {
@@ -349,12 +351,17 @@ button {
   margin-top: 60px;
 }
 
+.kachel-top-margin-benefit {
+  margin-top: 50px;
+}
+
 .kachel-top-neg-margin {
   margin-top: -30px;
 }
 
 .kachel-group {
   width: 28%;
+  z-index: 1;
 }
 
 .kachel-vert {
@@ -447,6 +454,13 @@ button {
   margin: 0 25px;
 }
 
+.process-image {
+  position: absolute;
+  z-index: 2;
+  left: calc(50% - 165px);
+  opacity: 0.5;
+}
+
 .process-step {
   padding: 50px 0;
 }
@@ -480,6 +494,12 @@ button {
 .benefit-heading {
   padding-left: 20px;
   padding-top: 15px;
+}
+
+.benefit-image {
+  position: absolute;
+  left: 0;
+  opacity: 0.5;
 }
 
 .benefit-text {
@@ -550,4 +570,45 @@ button {
 .white {
   background-color: #ebebeb;
   color: #21364a;
+}
+
+.why-image {
+  position: absolute;
+  left: calc(50% - 415px);
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1320px) {
+  .section {
+    max-width: 780px;
+  }
+
+  .section2 {
+    max-width: 780px;
+  }
+
+  .banner {
+    left: 224px;
+    z-index: 0;
+  }
+
+  .benefit-image {
+    width: 95%;
+  }
+
+  .kachel {
+    width: 42%;
+  }
+
+  .kachel-top-margin {
+    margin-top: 150px;
+  }
+
+  .kachel-top-margin2 {
+    margin-top: -125px;
+  }
+
+  .kachel-top-margin-benefit {
+    margin-top: -30px;
+  }
 }
