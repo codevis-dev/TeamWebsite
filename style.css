@@ -127,9 +127,9 @@ button {
 .banner {
   display: block;
   margin-left: auto;
-  position: relative;
-  bottom: 107px;
-  left: 481px;
+  position: absolute;
+  bottom: 23px;
+  right: 128px;
   z-index: 1;
 }
 
@@ -188,8 +188,8 @@ button {
 }
 
 .catch-phrase {
-  position: absolute;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
   width: 50%;
 }
 
@@ -575,7 +575,7 @@ button {
 
 .why-image {
   position: absolute;
-  left: calc(50% - 415px);
+  left: calc(50% - 385px);
   opacity: 0.5;
 }
 
@@ -586,11 +586,6 @@ button {
 
   .section2 {
     max-width: 780px;
-  }
-
-  .banner {
-    left: 224px;
-    z-index: 0;
   }
 
   .benefit-image {
@@ -612,7 +607,78 @@ button {
   .kachel-top-margin-benefit {
     margin-top: -30px;
   }
+
+  .navbar button {
+    width: 140px;
+  }
+
+  .process-step {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 780px) {
+  .section {
+    max-width: 95%;
+    padding: 200px 2.5% 100px;
+  }
+
+  .section2 {
+    max-width: 95%;
+    padding: 200px 2.5% 100px;
+  }
+
+  .kachel {
+    margin-top: 5px;
+  }
+
+  .kachel-col1 {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .kachel-col2 {
+    min-width: 265px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .kachel-group {
+    width: 50%;
+    min-width: 250px;
+  }
+
+  .kachel-top-margin {
+    margin-top: 0;
+  }
+
+  .kachel-top-margin2 {
+    margin-top: 0;
+  }
+
+  .kachel-image {
+    width: 70%;
+    height: auto
+  }
+
+  .kachel-vert-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process-image {
+    width: 70%;
+  }
+
+  .section-flex {
+    flex-direction: column;
+  }
+
+  .why-image {
+    width: 95%;
+  }
 }
