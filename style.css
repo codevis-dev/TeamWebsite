@@ -128,7 +128,7 @@ button {
   display: block;
   margin-left: auto;
   position: absolute;
-  bottom: 23px;
+  top: 182px;
   right: 128px;
   z-index: 1;
 }
@@ -226,14 +226,17 @@ button {
 
 .footer-col1 {
   width: 26%;
+  min-width: 180px;
 }
 
 .footer-col2 {
   width: 10%;
+  min-width: 160px;
 }
 
 .footer-col3 {
   width: 15%;
+  min-width: 200px;
 }
 
 .form {
@@ -251,6 +254,14 @@ button {
 
 .full-height {
   width: 100%;
+}
+
+.hamburger {
+  float: right; 
+  z-index: 2; 
+  position: relative; 
+  margin: 10px 10px 0 0; 
+  display: none;
 }
 
 .input {
@@ -378,7 +389,7 @@ button {
 }
 
 .kachel-vert-parent {
-  margin-top: 50px;
+  margin: 50px 20px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -446,13 +457,18 @@ button {
   margin: 32px;
 }
 
-.navbar button {
+.navbar-button {
   width: 180px;
   height: 46px;
   border: 0;
   color: #ebebeb;
   background: #e65238;
   margin: 0 25px;
+}
+
+.navbar-toggle {
+  height: auto;
+  background-color: #111418;
 }
 
 .process-image {
@@ -568,6 +584,10 @@ button {
   padding-left: 25px;
 }
 
+.visibility {
+  visibility: visible !important;
+}
+
 .white {
   background-color: #ebebeb;
   color: #21364a;
@@ -586,6 +606,10 @@ button {
 
   .section2 {
     max-width: 780px;
+  }
+
+  .b1 {
+    width: 65%;
   }
 
   .benefit-image {
@@ -608,7 +632,7 @@ button {
     margin-top: -30px;
   }
 
-  .navbar button {
+  .navbar-button {
     width: 140px;
   }
 
@@ -622,12 +646,16 @@ button {
 @media only screen and (max-width: 780px) {
   .section {
     max-width: 95%;
-    padding: 200px 2.5% 100px;
+    padding: 100px 2.5% 100px;
   }
 
   .section2 {
     max-width: 95%;
-    padding: 200px 2.5% 100px;
+    padding: 100px 2.5% 100px;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .kachel {
@@ -668,6 +696,28 @@ button {
   .kachel-vert-parent {
     flex-direction: column;
     align-items: center;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .navbar {
+    z-index: 4;
+    position: relative;
+    display: block;
+    margin: 0;
+  }
+
+  .navigation {
+    display: flex; 
+    flex-direction: column; 
+    visibility: hidden; 
+    text-align: center;
+  }
+
+  .nav-link {
+    margin: 20px 0;
   }
 
   .process-image {
