@@ -133,10 +133,32 @@ button {
   z-index: 1;
 }
 
+.banner2 {
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  top: 250px;
+  right: 128px;
+  z-index: 1;
+}
+
 .pattern {
   position: absolute;
   top: 0px;
   right: 0px;
+  z-index: 1;
+}
+
+.pattern2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.pattern3 {
+  position: absolute;
+  top: 0px;
   z-index: 1;
 }
 
@@ -257,10 +279,10 @@ button {
 }
 
 .hamburger {
-  float: right; 
-  z-index: 2; 
-  position: relative; 
-  margin: 10px 10px 0 0; 
+  float: right;
+  z-index: 2;
+  position: relative;
+  margin: 10px 10px 0 0;
   display: none;
 }
 
@@ -705,7 +727,7 @@ button {
 
   .kachel-image {
     width: 70%;
-    height: auto
+    height: auto;
   }
 
   .kachel-vert-parent {
@@ -725,9 +747,9 @@ button {
   }
 
   .navigation {
-    display: flex; 
-    flex-direction: column; 
-    visibility: hidden; 
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
     text-align: center;
   }
 
