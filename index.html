@@ -512,6 +512,10 @@
             src="https://dummyimage.com/500x700/ffffff/000000"
             class="process-image"
           />
+          <img 
+            src="https://dummyimage.com/230x230/ffffff/000000" 
+            class="process-image-collapsed"
+          />
           <div class="process-step process-step-right">
             <h5>Kontaktaufnahme</h5>
             <span
@@ -519,6 +523,10 @@
               Kundengespräch</span
             >
           </div>
+          <img 
+            src="https://dummyimage.com/230x230/ffffff/000000" 
+            class="process-image-collapsed"
+          />
           <div class="process-step process-step-left">
             <h5>Design</h5>
             <span
@@ -526,10 +534,18 @@
               Kundengespräch</span
             >
           </div>
+          <img 
+            src="https://dummyimage.com/230x230/ffffff/000000" 
+            class="process-image-collapsed"
+          />
           <div class="process-step process-step-right">
             <h5>Entwicklung</h5>
             <span></span>
           </div>
+          <img 
+            src="https://dummyimage.com/230x230/ffffff/000000" 
+            class="process-image-collapsed"
+          />
           <div class="process-step process-step-left">
             <h5>Launch</h5>
             <span></span>
@@ -737,6 +753,21 @@
     <!-- End Footer -->
   </body>
   <script>
+    
+    const x = window.matchMedia("(max-width: 780px)");
+    x.onchange = (e) => {
+      if(e.matches){
+        console.log("")
+      }
+      console.log(e);
+    }
+    /* const smallScreen = () => {
+      if(x.matches){
+        console.log("Matches");
+      } else {
+        console.log("No match");
+      }
+    } */
     const openNav = () => {
       document.getElementById("navbar").classList.toggle('navbar-toggle');
       document.getElementById("navigation").classList.toggle('visibility');

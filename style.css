@@ -478,6 +478,12 @@ button {
   opacity: 0.5;
 }
 
+.process-image-collapsed {
+  display: none;
+  width: auto;
+  margin: auto;
+}
+
 .process-step {
   padding: 50px 0;
 }
@@ -528,8 +534,9 @@ button {
   border-style: hidden;
   background-color: black;
   border-radius: 12px;
-  padding: 10px 20px 15px;
+  padding: 20px 30px;
   margin-bottom: 25px;
+  line-height: 2;
 }
 
 .section {
@@ -634,6 +641,14 @@ button {
 
   .navbar-button {
     width: 140px;
+  }
+
+  .process-image {
+    display: none;
+  }
+
+  .process-image-collapsed {
+    display: block;
   }
 
   .process-step {
