@@ -330,6 +330,14 @@ button {
   background-color: #e65238;
 }
 
+.square-orange2 {
+  border-style: hidden;
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+  background-color: #e65238;
+}
+
 .kachel {
   width: 26%;
   height: 300px;
@@ -586,6 +594,13 @@ button {
   background-color: silver;
 }
 
+.social-media {
+}
+
+.social-media-icon {
+  padding: 0 7px 0 0;
+}
+
 .story-left {
   width: 40%;
   margin-right: 100px;
@@ -593,6 +608,10 @@ button {
 
 .story-right {
   width: 60%;
+}
+
+.success-image {
+  padding-bottom: 30px;
 }
 
 .team {
