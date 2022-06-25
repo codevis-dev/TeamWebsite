@@ -219,6 +219,10 @@ button {
   width: 50%;
 }
 
+.dot-container {
+  display: none;
+}
+
 .ellipse {
   height: 100px;
   width: 100%;
@@ -735,12 +739,41 @@ button {
     padding: 100px 2.5% 100px;
   }
 
+  .active {
+    background-color: grey !important;
+  }
+
+  .catch-phrase {
+    width: auto;
+  }
+
+  .b1 {
+    max-width: 250px;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .dot-container {
+    display: block;
+    text-align: center;
+  }
+
   .hamburger {
     display: block;
   }
 
   .kachel {
     margin-top: 5px;
+    width: 250px;
   }
 
   .kachel-col1 {
@@ -752,7 +785,7 @@ button {
   .kachel-col2 {
     min-width: 265px;
     display: flex;
-    margin: auto;
+    margin: 25px auto;
     justify-content: center;
   }
 
@@ -803,6 +836,10 @@ button {
 
   .process-image {
     width: 70%;
+  }
+
+  .slide {
+    display: none;
   }
 
   .section-flex {

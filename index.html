@@ -16,9 +16,16 @@
   <body>
     <!-- Navigation -->
     <div class="navbar" id="navbar">
-      <button class="hamburger" onclick="openNav()">Open</button>
-      <a href="index.html">
+      <button class="hamburger" onclick="openNav()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+      </button>
         <div class="logo">
+          <a href="index.html" class="logo">
           <?xml version="1.0" encoding="utf-8"?>
           <svg
             class="logo-svg"
@@ -113,8 +120,8 @@
             </g>
           </svg>
           <h5 class="logo-text">codevis</h5>
+        </a>
         </div>
-      </a>
       <div class="navigation" id="navigation">
         <a class="font2 bold nav-link" href="projects.html">Projekte</a>
         <a class="font2 bold nav-link" href="about.html">Über Uns</a>
@@ -445,7 +452,7 @@
         </a>
       </div>
       <div class="kachel-col2">
-        <div class="kachel blue1">
+        <div class="kachel blue1 slide project-slide">
           <div class="square-orange"></div>
           <h3 class="font1 bold">TuneClash</h3>
           <span class="font4 semibold">MOBILE APP ● 2022</span>
@@ -462,7 +469,7 @@
             class="kachel-image"
           />
         </div>
-        <div class="kachel kachel-top-margin silver">
+        <div class="kachel kachel-top-margin silver slide project-slide">
           <div class="square-orange"></div>
           <h3 class="font1 bold">Teamwebsite</h3>
           <span class="font4 semibold">WEBSITE ● 2022</span>
@@ -475,11 +482,11 @@
             <span class="arrow tiny-arrow fa-solid fa-chevron-right"></span>
           </button>
           <img
-            src="https://dummyimage.com/100x80/ffffff/000000"
+            src="https://dummyimage.com/180x110/ffffff/000000"
             class="kachel-image"
           />
         </div>
-        <div class="kachel kachel-top-margin2 blue1">
+        <div class="kachel kachel-top-margin2 blue1 slide project-slide">
           <div class="square-orange"></div>
           <h3 class="font1 bold">E-Commerce</h3>
           <span class="font4 semibold">WEBSITE ● 2022</span>
@@ -492,10 +499,15 @@
             <span class="arrow tiny-arrow fa-solid fa-chevron-right"></span>
           </button>
           <img
-            src="https://dummyimage.com/100x80/ffffff/000000"
+            src="https://dummyimage.com/180x110/ffffff/000000"
             class="kachel-image"
           />
         </div>
+      </div>
+      <div class="dot-container">
+        <span class="dot project-dot" onclick="currentSlide(1, 'project')"></span>
+        <span class="dot project-dot" onclick="currentSlide(2, 'project')"></span>
+        <span class="dot project-dot" onclick="currentSlide(3, 'project')"></span>
       </div>
     </div>
     <!-- End Projects -->
@@ -615,7 +627,7 @@
     <div class="ellipse black"></div>
     <div class="section2 section-flex ellipse-fix">
       <img
-        src="https://dummyimage.com/1280x950/ffffff/000000"
+        src="https://dummyimage.com/1280x850/ffffff/000000"
         class="benefit-image"
       />
       <div class="kachel-col1">
@@ -627,7 +639,7 @@
         >
       </div>
       <div class="kachel-col2">
-        <div class="kachel white">
+        <div class="kachel white slide benefit-slide">
           <div class="icon-dark"></div>
           <h3 class="font1 bold benefit-heading">Handwerker</h3>
           <span class="font3 benefit-text"
@@ -636,7 +648,7 @@
           >
           <img />
         </div>
-        <div class="kachel blue2 kachel-top-margin-benefit">
+        <div class="kachel blue2 kachel-top-margin-benefit slide benefit-slide">
           <span class="icon-light"></span>
           <h3 class="font1 bold benefit-heading">Für Sie</h3>
           <span class="font3 benefit-text"
@@ -646,7 +658,7 @@
           >
           <img />
         </div>
-        <div class="kachel white">
+        <div class="kachel white slide benefit-slide">
           <span class="icon-dark"></span>
           <h3 class="font1 bold benefit-heading">Künstler</h3>
           <span class="font3 benefit-text"
@@ -655,7 +667,7 @@
           </span>
           <img />
         </div>
-        <div class="kachel blue1 kachel-top-neg-margin">
+        <div class="kachel blue1 kachel-top-neg-margin slide benefit-slide">
           <span class="icon-light"></span>
           <h3 class="font1 bold benefit-heading">Friseur</h3>
           <span class="font3 benefit-text"
@@ -664,7 +676,7 @@
           </span>
           <img />
         </div>
-        <div class="kachel white">
+        <div class="kachel white slide benefit-slide">
           <span class="icon-dark"></span>
           <h3 class="font1 bold benefit-heading">Verein</h3>
           <span class="font3 benefit-text"
@@ -673,7 +685,7 @@
           </span>
           <img />
         </div>
-        <div class="kachel blue1 kachel-top-neg-margin">
+        <div class="kachel blue1 kachel-top-neg-margin slide benefit-slide">
           <span class="icon-light"></span>
           <h3 class="font1 bold benefit-heading">Ferienwohnung</h3>
           <span class="font3 benefit-text"
@@ -682,6 +694,14 @@
           </span>
           <img />
         </div>
+      </div>
+      <div class="dot-container">
+        <span class="dot benefit-dot" onclick="currentSlide(1, 'benefit')"></span>
+        <span class="dot benefit-dot" onclick="currentSlide(2, 'benefit')"></span>
+        <span class="dot benefit-dot" onclick="currentSlide(3, 'benefit')"></span>
+        <span class="dot benefit-dot" onclick="currentSlide(4, 'benefit')"></span>
+        <span class="dot benefit-dot" onclick="currentSlide(5, 'benefit')"></span>
+        <span class="dot benefit-dot" onclick="currentSlide(6, 'benefit')"></span>
       </div>
     </div>
     <!-- End Benefit -->
@@ -752,25 +772,5 @@
     </div>
     <!-- End Footer -->
   </body>
-  <script>
-    
-    const x = window.matchMedia("(max-width: 780px)");
-    x.onchange = (e) => {
-      if(e.matches){
-        console.log("")
-      }
-      console.log(e);
-    }
-    /* const smallScreen = () => {
-      if(x.matches){
-        console.log("Matches");
-      } else {
-        console.log("No match");
-      }
-    } */
-    const openNav = () => {
-      document.getElementById("navbar").classList.toggle('navbar-toggle');
-      document.getElementById("navigation").classList.toggle('visibility');
-    }
-  </script>
+  <script src="./script.js"></script>
 </html>
