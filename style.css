@@ -748,7 +748,7 @@ button {
   }
 
   .b1 {
-    max-width: 250px;
+    width: 250px;
   }
 
   .dot {
@@ -765,6 +765,33 @@ button {
   .dot-container {
     display: block;
     text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-column h6, p {
+    display: none;
+  }
+
+  .footer-col1, .footer-col2, .footer-col3 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer-col2 a {
+    padding: 10px 0;
+  }
+
+  .footer-col3 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footer-col3 a {
+    font-size: 11px;
   }
 
   .hamburger {
@@ -838,6 +865,10 @@ button {
     width: 70%;
   }
 
+  .process-step {
+    width: 250px;
+  }
+
   .slide {
     display: none;
   }
@@ -848,5 +879,20 @@ button {
 
   .why-image {
     width: 95%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .hamburger {
+    margin: 30px 15px 0 0;
+  }
+
+  .icon-tabler-menu-2 {
+    width: 30px;
+    height: 30px;
   }
 }
