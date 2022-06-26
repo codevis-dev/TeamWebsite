@@ -306,7 +306,7 @@ button {
   float: right;
   z-index: 2;
   position: relative;
-  margin: 10px 10px 0 0;
+  margin: 25px 15px 0 0;
   display: none;
 }
 
@@ -772,7 +772,7 @@ button {
     flex-direction: column;
   }
 
-  .footer-column h6, p {
+  .footer-mobile-hidden {
     display: none;
   }
 
@@ -781,7 +781,7 @@ button {
     margin: 10px 0;
   }
 
-  .footer-col2 a {
+  .footer-col2 > a {
     padding: 10px 0;
   }
 
@@ -790,7 +790,7 @@ button {
     justify-content: space-evenly;
   }
 
-  .footer-col3 a {
+  .footer-col3 > a {
     font-size: 11px;
   }
 
@@ -859,6 +859,15 @@ button {
 
   .nav-link {
     margin: 20px 0;
+  }
+
+  .pattern {
+    width: 70%;
+    top: 350px;
+  }
+
+  .pattern svg {
+    width: 100%;
   }
 
   .process-image {
