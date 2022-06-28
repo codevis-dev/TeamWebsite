@@ -240,6 +240,11 @@ button {
   flex-direction: column;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .footer {
   width: 85%;
   margin: auto;
@@ -287,7 +292,7 @@ button {
 
 .form-image {
   position: relative;
-  left: 165px;
+  left: 109px;
 }
 
 .form-text {
@@ -351,7 +356,7 @@ button {
   border-style: hidden;
   border-radius: 8px;
   height: 21px;
-  width: 10%;
+  width: 21px;
   background-color: #e65238;
 }
 
@@ -561,6 +566,7 @@ button {
   width: 90%;
   border-radius: 40px;
   padding: 50px;
+  margin: auto;
 }
 
 .project-left {
@@ -569,8 +575,8 @@ button {
 
 .project-right {
   width: 40%;
-  width: 350px;
-  height: 300px;
+  max-width: 350px;
+  height: auto;
 }
 
 .benefit-heading {
@@ -628,6 +634,11 @@ button {
 
 .social-media-icon {
   padding: 0 7px 0 0;
+}
+
+.story-flex {
+  display: flex;
+  flex-direction: row;
 }
 
 .story-left {
@@ -693,6 +704,20 @@ button {
     width: 95%;
   }
 
+  .form-image {
+    width: 250px;
+    height: 700px;
+    left: 100px;
+  }
+
+  .form-left {
+    display: none;
+  }
+
+  .form-right {
+    width: auto;
+  }
+
   .kachel {
     width: 42%;
   }
@@ -725,6 +750,14 @@ button {
     width: 50%;
     margin: auto;
     text-align: center;
+  }
+
+  .team {
+    width: auto;
+  }
+
+  .team-flex {
+    flex-direction: column;
   }
 }
 
@@ -792,6 +825,14 @@ button {
 
   .footer-col3 > a {
     font-size: 11px;
+  }
+
+  .form-mobile-bg {
+    background-color: #192531;
+  }
+
+  .form-padding-mobile-fix {
+    padding: 0px 2.5%;
   }
 
   .hamburger {
@@ -878,6 +919,21 @@ button {
     width: 250px;
   }
 
+  .project {
+    width: 80%;
+    padding: 25px;
+  }
+
+  .project-image {
+    height: 500px;
+  }
+
+  .project-right {
+    width: 70%;
+    max-width: 250px;
+    margin-left: auto;
+  }
+
   .slide {
     display: none;
   }
@@ -886,8 +942,51 @@ button {
     flex-direction: column;
   }
 
+  .story-flex {
+    flex-direction: column-reverse;
+  }
+
+  .story-left {
+    width: auto;
+    margin: 0;
+  }
+
+  .story-right {
+    width: auto;
+  }
+
+  .success-image {
+    margin: auto;
+    display: block;
+  }
+
   .why-image {
     width: 95%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .project {
+    padding: 20px;
+  }
+  
+  .social-media-icon {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .square-orange2 {
+    width: 24px;
+    height: 24px;
+  }
+
+  .team-header {
+    line-height: 1;
+  }
+
+  .team-header > .font1 {
+    margin: 15px 0;
   }
 }
 

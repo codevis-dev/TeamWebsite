@@ -11,13 +11,21 @@
       src="https://kit.fontawesome.com/9d935363fc.js"
       crossorigin="anonymous"
     ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <!-- Navigation -->
     <div class="navbar" id="navbar">
-      <button class="hamburger" onclick="openNav()">Open</button>
-      <a href="index.html">
+      <button class="hamburger" onclick="openNav()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+      </button>
         <div class="logo">
+          <a href="index.html" class="logo">
           <?xml version="1.0" encoding="utf-8"?>
           <svg
             class="logo-svg"
@@ -112,8 +120,8 @@
             </g>
           </svg>
           <h5 class="logo-text">codevis</h5>
+        </a>
         </div>
-      </a>
       <div class="navigation" id="navigation">
         <a class="font2 bold nav-link" href="projects.html">Projekte</a>
         <a class="font2 bold nav-link" href="about.html">Über Uns</a>
@@ -125,7 +133,7 @@
     <!-- End Navigation -->
     <!-- Banner -->
     <div class="section">
-    <div class="pattern2"><img src="https://dummyimage.com/370x800/294000/000000"/></div>
+    <div class="pattern2"><img src="https://dummyimage.com/370x800/294000/000000"/ class="project-image"></div>
       <div class="catch-phrase">
         <h1>Projekte</h1>
         <div class="location"></div>
@@ -140,7 +148,7 @@
     <!-- Projects -->
     <div class="section">
       <div class="project blue1">
-        <div class="square-orange"></div>
+        <div class="square-orange2"></div>
         <div class="section-flex">
           <div class="project-left">
             <h4>TuneClash</h4>
@@ -148,7 +156,11 @@
             <p class="font2">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.ibero.
             </p>
-            <button class="b1">Details</button>
+            <button class="b1">
+              <span>Details</span>
+              <span class="arrow fa-solid fa-chevron-right"></span>
+            </span>
+            </button>
           </div>
           <img
             src="https://dummyimage.com/350x300/ffffff/000000"
@@ -159,20 +171,44 @@
     </div>
     <!-- End Projects -->
     <!-- Footer -->
+    <div class="ellipse black"></div>
     <div class="footer">
       <div class="footer-column footer-col1">
         <img />
-        <h6>Codevis</h6>
-        <!--icons-->
+        <h6 class="footer-mobile-hidden">Codevis</h6>
+        <p class="footer-mobile-hidden">
+          Wir sind geil und deswegen steht hier nochmal nen geiler Spruch mit
+          Schmackes zu was uns ausmacht
+        </p>
+        <div class="social-media">
+          <svg class="social-media-icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg>
+          <svg class="social-media-icon xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg>
+          <svg class="social-media-icon xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg>
+        </div>
       </div>
       <div class="footer-column footer-col2">
-        <h6>Übersicht</h6>
+        <h6 class="footer-mobile-hidden">Übersicht</h6>
         <a>Projekte</a>
         <a>Über uns</a>
         <a>Kontakt</a>
       </div>
       <div class="footer-column footer-col3">
-        <h6>Rechtliches</h6>
+        <h6 class="footer-mobile-hidden">Rechtliches</h6>
         <a>AGB</a>
         <a>Impressum</a>
         <a>Datenschutzerklärung</a>
@@ -180,4 +216,5 @@
     </div>
     <!-- End Footer -->
   </body>
+  <script src="./script.js"></script>
 </html>
