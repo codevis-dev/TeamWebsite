@@ -710,10 +710,6 @@ button {
     left: 100px;
   }
 
-  .form-right {
-    width: auto;
-  }
-
   .kachel {
     width: 42%;
   }
@@ -825,6 +821,10 @@ button {
 
   .form-left {
     display: none;
+  }
+
+  .form-right {
+    width: auto;
   }
 
   .form-mobile-bg {
