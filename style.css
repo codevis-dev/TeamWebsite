@@ -710,10 +710,6 @@ button {
     left: 100px;
   }
 
-  .form-left {
-    display: none;
-  }
-
   .form-right {
     width: auto;
   }
@@ -825,6 +821,10 @@ button {
 
   .footer-col3 > a {
     font-size: 11px;
+  }
+
+  .form-left {
+    display: none;
   }
 
   .form-mobile-bg {
