@@ -54,3 +54,113 @@ x.onchange = (e) => {
     }
   }
 };
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.backgroundColor =
+      "hsla(214, 17%, 8%, 0.8)";
+  } else {
+    document.getElementById("navbar").style.top = "-90px";
+  }
+  prevScrollpos = currentScrollPos;
+  if (currentScrollPos == 0) {
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.backgroundColor =
+      "hsla(214, 17%, 8%, 0)";
+  }
+};
+
+let loader = document.getElementById("preloader");
+let gifloader = document.getElementById("preloadergif");
+
+window.addEventListener("load", function () {
+  loader.classList.add("loaded");
+  gifloader.classList.add("gifloaded");
+});
+
+const kachel = document.querySelectorAll(".kachel");
+for (let i = 0; i < kachel.length; i++) {
+  kachel[i].classList.remove("kachel-transition");
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      for (let i = 0; i < kachel.length; i++) {
+        kachel[i].classList.add("kachel-transition");
+      }
+      return;
+    }
+    for (let i = 0; i < kachel.length; i++) {
+      kachel[i].classList.remove("kachel-transition");
+    }
+  });
+});
+
+observer.observe(document.querySelector(".kachel-col1"));
+observer.observe(document.querySelector(".kachel-col2"));
+
+const catch1phrase = document.querySelector(".catch1");
+catch1phrase.classList.remove("catch-transition");
+
+const catch1observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const catch1phrase = entry.target.querySelector(".catch1");
+    if (entry.isIntersecting) {
+      catch1phrase.classList.add("catch-transition");
+      return;
+    }
+    catch1phrase.classList.remove("catch-transition");
+  });
+});
+
+catch1observer.observe(document.querySelector(".kachel-col1-catch1"));
+const catch2phrase = document.querySelector(".catch2");
+catch2phrase.classList.remove("catch-transition");
+
+const catch2observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const catch2phrase = entry.target.querySelector(".catch2");
+    if (entry.isIntersecting) {
+      catch2phrase.classList.add("catch-transition");
+      return;
+    }
+    catch2phrase.classList.remove("catch-transition");
+  });
+});
+
+catch2observer.observe(document.querySelector(".kachel-col1-catch2"));
+
+const catch3phrase = document.querySelector(".catch3");
+catch3phrase.classList.remove("catch-transition");
+
+const catch3observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const catch3phrase = entry.target.querySelector(".catch3");
+    if (entry.isIntersecting) {
+      catch3phrase.classList.add("catch-transition");
+      return;
+    }
+    catch3phrase.classList.remove("catch-transition");
+  });
+});
+
+catch3observer.observe(document.querySelector(".kachel-col1-catch3"));
+
+const button = document.querySelector(".button-scta");
+button.classList.remove("button-transition");
+
+const buttonObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      button.classList.add("button-transition");
+      return;
+    }
+    button.classList.remove("button-transition");
+  });
+});
+
+buttonObserver.observe(document.querySelector(".button-container"));
