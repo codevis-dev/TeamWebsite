@@ -8,7 +8,7 @@ const openNav = () => {
 };
 
 // method to change between different tiles for mobile
-function showSlides(n, kind) {
+/* function showSlides(n, kind) {
   let i;
   let slides = document.getElementsByClassName(`${kind}-slide`);
   let dots = document.getElementsByClassName(`${kind}-dot`);
@@ -35,10 +35,10 @@ function plusSlides(n) {
 // Thumbnail image controls
 function currentSlide(n, kind) {
   showSlides((slideIndex = n), kind);
-}
+} */
 
 // method to detect small screen in js with media query
-const x = window.matchMedia("(max-width: 780px)");
+/* const x = window.matchMedia("(max-width: 780px)");
 if (x.matches) {
   showSlides(slideIndex, "project");
   showSlides(slideIndex, "benefit");
@@ -54,3 +54,25 @@ x.onchange = (e) => {
     }
   }
 };
+ */
+
+const toggleDots = (n, kind) => {
+  const dots = document.getElementsByClassName(`${kind}-dot`);
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  dots[n].className += " active";
+};
+
+const scrollHandler = (e) => {
+  if (e.target.id == "project-carousel") {
+    toggleDots(Math.floor(e.target.scrollLeft / 200), "project");
+  } else {
+    toggleDots(Math.floor(e.target.scrollLeft / 240), "benefit");
+  }
+};
+const projectCarousel = document.getElementById("project-carousel");
+const benefitCarousel = document.getElementById("benefit-carousel");
+
+projectCarousel.addEventListener("scroll", scrollHandler);
+benefitCarousel.addEventListener("scroll", scrollHandler);

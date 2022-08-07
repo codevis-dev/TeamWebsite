@@ -767,6 +767,14 @@ button {
   .active {
     background-color: grey !important;
   }
+  
+  .benefit-first-child {
+    margin-left: calc(0.567 * 100vw + 1282px);
+  }
+
+  .benefit-last-child {
+    margin-right: calc(50vw - 135px);
+  }
 
   .catch-phrase {
     width: auto;
@@ -854,7 +862,18 @@ button {
     min-width: 265px;
     display: flex;
     margin: 25px auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
     justify-content: center;
+    width: calc(100vw + 50px);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+
+  .kachel-col2::-webkit-scrollbar {
+    display: none;
   }
 
   .kachel-group {
@@ -924,6 +943,14 @@ button {
     padding: 25px;
   }
 
+  .project-first-child {
+    margin-left: calc(0.463 * 100vw + 491px);
+  }
+
+  .project-last-child {
+    margin-right: calc(50vw - 115px);
+  }
+
   .project-image {
     height: 500px;
   }
@@ -935,7 +962,9 @@ button {
   }
 
   .slide {
-    display: none;
+    /* display: none; */
+    flex-shrink: 0;
+    scroll-snap-align: center;
   }
 
   .section-flex {
