@@ -164,3 +164,83 @@ const buttonObserver = new IntersectionObserver((entries) => {
 });
 
 buttonObserver.observe(document.querySelector(".button-container"));
+
+const headline = document.querySelector(".headline");
+headline.classList.remove("headline-transition");
+
+const headlineObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const headline = entry.target.querySelector(".headline");
+    if (entry.isIntersecting) {
+      headline.classList.add("headline-transition");
+      return;
+    }
+    headline.classList.remove("headline-transition");
+  });
+});
+
+headlineObserver.observe(document.querySelector(".process"));
+
+const step1 = document.querySelector(".right1");
+step1.classList.remove("right-transition");
+
+const step1Observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const step1 = entry.target.querySelector(".right1");
+    if (entry.isIntersecting) {
+      step1.classList.add("right-transition");
+      return;
+    }
+    step1.classList.remove("right-transition");
+  });
+});
+
+step1Observer.observe(document.querySelector(".process-step1"));
+
+const step2 = document.querySelector(".left1");
+step2.classList.remove("left-transition");
+
+const step2Observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const step2 = entry.target.querySelector(".left1");
+    if (entry.isIntersecting) {
+      step2.classList.add("left-transition");
+      return;
+    }
+    step2.classList.remove("left-transition");
+  });
+});
+
+step2Observer.observe(document.querySelector(".process-step2"));
+
+const step3 = document.querySelector(".right2");
+step3.classList.remove("right-transition");
+
+const step3Observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const step1 = entry.target.querySelector(".right2");
+    if (entry.isIntersecting) {
+      step3.classList.add("right-transition");
+      return;
+    }
+    step3.classList.remove("right-transition");
+  });
+});
+
+step3Observer.observe(document.querySelector(".process-step3"));
+
+const step4 = document.querySelector(".left2");
+step4.classList.remove("left-transition");
+
+const step4Observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const step2 = entry.target.querySelector(".left2");
+    if (entry.isIntersecting) {
+      step4.classList.add("left-transition");
+      return;
+    }
+    step4.classList.remove("left-transition");
+  });
+});
+
+step4Observer.observe(document.querySelector(".process-step3"));

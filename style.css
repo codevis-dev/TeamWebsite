@@ -4,7 +4,6 @@ body {
   color: #ebebeb;
   font-family: "Poppins";
   margin: 0;
-  overflow-x: hidden;
 }
 
 div {
@@ -222,7 +221,6 @@ button {
   font-size: 18px;
   font-weight: 700;
   border: 0;
-  transition: all 0.4s ease-out;
   opacity: 0;
 }
 .button-scta:hover {
@@ -232,7 +230,7 @@ button {
 
 @media (prefers-reduced-motion: no-preference) {
   .button-scta {
-    transition: opacity 0.4s ease-out 0.2s;
+    transition: all 0.4s ease-out;
   }
 }
 
@@ -287,6 +285,17 @@ button {
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(-20%);
     opacity: 0;
   }
   100% {
@@ -422,6 +431,30 @@ button {
   display: none;
 }
 
+@keyframes slideTop {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .headline-transition {
+    animation: slideTop 0.4s ease-out both;
+  }
+}
+
+.headline-transition {
+  opacity: 1;
+}
+
+.headline {
+  opacity: 0;
+}
+
 .input {
   width: 90%;
   padding: 10px;
@@ -485,11 +518,16 @@ button {
   padding: 20px;
   margin: 10px;
   opacity: 1;
+  transition: transform 0.2s ease-out;
+}
+
+.kachel:hover {
+  transform: scale(1.025);
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .kachel {
-    transition: opacity 0.6s ease-out;
+  .kachel-transition {
+    animation: slideInFromRight 0.4s ease-out both;
   }
 }
 
@@ -518,6 +556,7 @@ button {
   margin-right: 3%;
   margin-left: 2%;
   z-index: 2;
+  height: 750px;
 }
 
 .kachel-col2 {
@@ -527,6 +566,16 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 2;
+  height: 600px;
+}
+.kachel-col3 {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+  height: 750px;
 }
 
 .kachel-image {
@@ -555,8 +604,13 @@ button {
 }
 
 .kachel-group {
-  width: 28%;
+  height: 0;
+  width: 25%;
   z-index: 1;
+}
+
+.kachel-heading {
+  margin-bottom: 8px;
 }
 
 .kachel-vert {
@@ -566,13 +620,26 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px;
+  padding: 30px 40px;
   background-color: #ebebeb;
-  color: #21364a;
+  color: #294762;
+  text-align: left;
+  transition: transform 0.2s ease-out;
+}
+
+.kachel-group:hover .icon-top {
+  transform: translate(-15%, -25%);
+  color: #111418;
+  z-index: 7;
+}
+
+.kachel-group:hover .kachel-vert {
+  color: #111418;
+  transform: translateY(-5%);
 }
 
 .kachel-vert-parent {
-  margin: 50px 20px 0;
+  margin: 50px 20px 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -586,6 +653,30 @@ button {
   position: relative;
   left: 15px;
   top: 15px;
+  transition: all 0.2s ease-out both;
+}
+
+.icon-step {
+  width: 35px;
+  height: 35px;
+  background-color: #a8dadc;
+  border-radius: 50%;
+  position: relative;
+  color: #111418;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 18;
+  font-weight: bold;
+}
+
+.icon-step-right {
+  left: -48px;
+  top: 39px;
+}
+.icon-step-left {
+  left: 353px;
+  top: 39px;
 }
 
 .icon-dark {
@@ -603,10 +694,12 @@ button {
 }
 
 .icon-top {
+  transition: transform 0.2s ease-out;
   left: -15px;
   top: 40px;
   width: 56px;
   height: 56px;
+  z-index: 7;
 }
 
 .location {
@@ -698,6 +791,10 @@ button {
   color: #e65238;
 }
 
+.process {
+  opacity: 1;
+}
+
 .process-image {
   position: absolute;
   z-index: 2;
@@ -767,6 +864,17 @@ button {
   line-height: 2;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .right-transition {
+    animation: slideInFromLeft 0.4s ease-out both;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .left-transition {
+    animation: slideInFromRight 0.4s ease-out both;
+  }
+}
+
 .section {
   max-width: 1130px;
   padding: 280px 0 100px 0;
@@ -810,6 +918,12 @@ button {
 }
 .social-media-icon:hover {
   stroke: #e65238;
+}
+.sticky {
+  position: sticky;
+  width: 300px;
+  height: 300px;
+  top: 120px;
 }
 
 .story-flex {
@@ -887,7 +1001,7 @@ button {
   }
 
   .kachel {
-    width: 42%;
+    width: 38%;
   }
 
   .kachel-top-margin {
@@ -936,6 +1050,10 @@ button {
   }
 
   .section2 {
+    max-width: 95%;
+    padding: 100px 2.5% 100px;
+  }
+  .section4 {
     max-width: 95%;
     padding: 100px 2.5% 100px;
   }
@@ -1037,6 +1155,14 @@ button {
     display: flex;
     margin: 25px auto;
     justify-content: center;
+    float: right;
+  }
+  .kachel-col3 {
+    min-width: 265px;
+    display: flex;
+    margin: 25px auto;
+    justify-content: center;
+    float: right;
   }
 
   .kachel-group {
@@ -1117,6 +1243,7 @@ button {
   }
 
   .section-flex {
+    display: flex;
     flex-direction: column;
   }
 
