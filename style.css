@@ -478,7 +478,7 @@ button {
   width: 90%;
   padding: 10px;
   margin: 20px auto;
-  color: grey;
+  color: #B9B7BD;
   border-width: 1px;
   border-color: grey;
   border-style: solid;
@@ -884,7 +884,7 @@ button {
 }
 
 .benefit-carousel-normal {
-  display: block;
+  display: flex;
 }
 
 .benefit-text {
@@ -914,7 +914,7 @@ button {
 
 .section {
   max-width: 1130px;
-  padding: 200px 0 100px 0;
+  padding: 100px 0 100px 0;
   margin: auto;
 }
 
@@ -1013,7 +1013,23 @@ button {
   opacity: 0.5;
 }
 
+.why-text {
+  margin: 10px 100px 20px;
+}
+
 @media only screen and (max-width: 1280px) {
+  h5 {
+    font-size: 23px;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
   .section {
     max-width: 780px;
   }
@@ -1039,11 +1055,19 @@ button {
   }
 
   .benefit-carousel-medium {
-    display: block;
+    display: flex;
   }
 
   .benefit-carousel-normal {
     display: none;
+  }
+
+  .catch3 {
+    font-size: 16px;
+  }
+
+  .end-logo-text {
+    font-size: 32px;
   }
 
   .form-image {
@@ -1060,6 +1084,11 @@ button {
   .icon-step-right {
     left: 0;
     top: 0;
+  }
+
+  .input-submit {
+    font-size: 16px;
+    font-weight: 700;
   }
 
   .kachel {
@@ -1083,7 +1112,11 @@ button {
   }
 
   .kachel-top-margin-benefit {
-    margin-top: -30px;
+    margin-top: -10px;
+  }
+
+  .kachel-top-neg-margin {
+    margin-top: 30px;
   }
 
   .kachel-vert {
@@ -1123,13 +1156,41 @@ button {
 }
 
 @media only screen and (max-width: 780px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  h5 {
+    font-size: 23px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+  .font1 {
+    font-size: 14px;
+  }
+
+  .font2 {
+    font-size: 14px;
+  }
+
   .section {
-    max-width: 95%;
+    max-width: 75%;
     padding: 100px 2.5% 100px;
   }
 
   .section2 {
-    max-width: 95%;
+    max-width: 90%;
     padding: 100px 2.5% 100px;
   }
 
@@ -1142,38 +1203,52 @@ button {
     max-width: 95%;
     padding: 100px 2.5% 100px;
   }
-
+  
   .active {
     background-color: grey !important;
   }
+  
+  .b1 {
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+  }
 
   .benefit-first-child {
-    margin-left: calc(0.567 * 100vw + 1282px);
+    margin-left: calc(0.50901 * 100vw + 1448.68px);
   }
 
   .benefit-last-child {
-    margin-right: calc(50vw - 135px);
+    margin-right: calc(50vw - 105px);
   }
 
   .benefit-carousel-medium {
-    display: none;
+    display: none !important;
   }
 
   .benefit-carousel-normal {
-    display: block;
+    display: flex;
+  }
+
+  .button1 {
+    transition: none;
+  }
+
+  .catch2 {
+    font-size: 35px;
+  }
+
+  .catch3 {
+    font-size: 16px;
   }
 
   .catch-phrase {
     width: auto;
   }
 
-  .b1 {
-    width: 250px;
-  }
-
   .dot {
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     margin: 0 2px;
     background-color: #ebebeb;
     border-radius: 50%;
@@ -1348,6 +1423,7 @@ button {
   .navigation {
     display: flex;
     flex-direction: column;
+    align-items: center;
     visibility: hidden;
     text-align: center;
   }
@@ -1375,7 +1451,7 @@ button {
   }
 
   .project-first-child {
-    margin-left: calc(0.463 * 100vw + 491px);
+    margin-left: calc(0.50424 * 100vw + 503.225px);
   }
 
   .project-last-child {
@@ -1416,6 +1492,10 @@ button {
     width: auto;
   }
 
+  .subheading {
+    font-size: 18px;
+  }
+
   .success-image {
     margin: auto;
     display: block;
@@ -1423,6 +1503,11 @@ button {
 
   .why-image {
     width: 95%;
+  }
+
+  .why-text {
+    width: 95%;
+    margin: 10px 0;
   }
 }
 

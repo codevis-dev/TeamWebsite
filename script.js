@@ -17,9 +17,9 @@ const toggleDots = (n, kind) => {
 
 const scrollHandler = (e) => {
   if (e.target.id == "project-carousel") {
-    toggleDots(Math.floor(e.target.scrollLeft / 200), "project");
+    toggleDots(Math.floor(e.target.scrollLeft / 210), "project");
   } else {
-    toggleDots(Math.floor(e.target.scrollLeft / 240), "benefit");
+    toggleDots(Math.floor(e.target.scrollLeft / 260), "benefit");
   }
 };
 
