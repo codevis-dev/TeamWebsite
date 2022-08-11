@@ -7,53 +7,22 @@ const openNav = () => {
   document.getElementById("navigation").classList.toggle("visibility");
 };
 
-// method to change between different tiles for mobile
-function showSlides(n, kind) {
-  let i;
-  let slides = document.getElementsByClassName(`${kind}-slide`);
-  let dots = document.getElementsByClassName(`${kind}-dot`);
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+const toggleDots = (n, kind) => {
+  const dots = document.getElementsByClassName(`${kind}-dot`);
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "flex";
-  dots[slideIndex - 1].className += " active";
-}
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+  dots[n].className += " active";
+};
 
-// Thumbnail image controls
-function currentSlide(n, kind) {
-  showSlides((slideIndex = n), kind);
-}
-
-// method to detect small screen in js with media query
-const x = window.matchMedia("(max-width: 780px)");
-if (x.matches) {
-  showSlides(slideIndex, "project");
-  showSlides(slideIndex, "benefit");
-}
-x.onchange = (e) => {
-  if (e.matches) {
-    showSlides(slideIndex, "project");
-    showSlides(slideIndex, "benefit");
+const scrollHandler = (e) => {
+  if (e.target.id == "project-carousel") {
+    toggleDots(Math.floor(e.target.scrollLeft / 200), "project");
   } else {
-    let slides = document.getElementsByClassName("slide");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "flex";
-    }
+    toggleDots(Math.floor(e.target.scrollLeft / 240), "benefit");
   }
 };
+
 let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function () {
@@ -218,7 +187,7 @@ step3.classList.remove("right-transition");
 
 const step3Observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    const step1 = entry.target.querySelector(".right2");
+    const step3 = entry.target.querySelector(".right2");
     if (entry.isIntersecting) {
       step3.classList.add("right-transition");
       return;
@@ -244,3 +213,9 @@ const step4Observer = new IntersectionObserver((entries) => {
 });
 
 step4Observer.observe(document.querySelector(".process-step3"));
+
+const projectCarousel = document.getElementById("project-carousel");
+const benefitCarousel = document.getElementById("benefit-carousel");
+
+projectCarousel.addEventListener("scroll", scrollHandler);
+benefitCarousel.addEventListener("scroll", scrollHandler);
