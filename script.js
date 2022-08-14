@@ -2,9 +2,19 @@
 let slideIndex = 1;
 
 // toggle navbar on mobile style
+const navigation = document.querySelector(".navigation");
 const openNav = () => {
-  document.getElementById("navbar").classList.toggle("navbar-toggle");
-  document.getElementById("navigation").classList.toggle("visibility");
+  let visible;
+  const navigation = document.getElementById("navigation");
+  visible = document.getElementById("navbar").classList.toggle("navbar-toggle");
+  if (visible) {
+    navigation.style.animation = "navanimation 1s forwards";
+    document.querySelector("body").classList.add("overflow");
+  }
+  if (!visible) {
+    navigation.style.animation = "backanimation 1.6s forwards";
+    document.querySelector("body").classList.remove("overflow");
+  }
 };
 
 const toggleDots = (n, kind) => {
