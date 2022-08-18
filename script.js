@@ -37,6 +37,10 @@ let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
+  let width = window.innerWidth;
+  if (width < 780) {
+    return;
+  }
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
     document.getElementById("navbar").style.backgroundColor =
@@ -56,8 +60,8 @@ let loader = document.getElementById("preloader");
 let gifloader = document.getElementById("preloadergif");
 
 window.addEventListener("load", function () {
-  loader.classList.add("loaded");
-  gifloader.classList.add("gifloaded");
+  loader?.classList.add("loaded");
+  gifloader?.classList.add("gifloaded");
 });
 
 const kachel = document.querySelectorAll(".kachel");
