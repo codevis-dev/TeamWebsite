@@ -56,7 +56,6 @@ if (width < 780) {
     if (width < 780) {
       return;
     }
-    console.log(currentScrollPos, prevScrollpos);
     if (prevScrollpos > currentScrollPos) {
       navbar.style.top = "0";
       navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0.8)";
@@ -73,7 +72,6 @@ if (width < 780) {
 
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
-  console.log(currentScrollPos, prevScrollpos);
   if (prevScrollpos > currentScrollPos) {
     navbar.style.top = "0";
     navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0.8)";
