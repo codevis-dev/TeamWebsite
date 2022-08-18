@@ -196,6 +196,15 @@ button {
   background-color: #294762;
 }
 
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes reveal {
   0% {
     opacity: 0;
@@ -220,6 +229,7 @@ button {
 
 .b1 {
   opacity: 0;
+  -webkit-animation: reveal 1s linear 2s forwards;
   animation: reveal 1s linear 2s forwards;
 }
 
@@ -274,6 +284,7 @@ button {
 
 @media (prefers-reduced-motion: no-preference) {
   .catch-transition {
+    -webkit-animation: slideInFromLeft 0.4s ease-in-out both;
     animation: slideInFromLeft 0.4s ease-in-out both;
   }
 }
@@ -289,9 +300,31 @@ button {
   margin-top: 70px;
 }
 
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInFromRight {
+  0% {
+    transform: translateX(-20%);
     opacity: 0;
   }
   100% {
@@ -313,19 +346,23 @@ button {
 
 .catch-phrase-1 {
   opacity: 0;
+  -webkit-animation: slideInFromLeft 1s ease-in-out 0.4s forwards;
   animation: slideInFromLeft 1s ease-in-out 0.4s forwards;
 }
 
 .catch-phrase-2 {
   opacity: 0;
+  -webkit-animation: slideInFromLeft 1s ease-in-out 0.7s forwards;
   animation: slideInFromLeft 1s ease-in-out 0.7s forwards;
 }
 .catch-phrase-3 {
   opacity: 0;
+  -webkit-animation: slideInFromLeft 1s ease-in-out 1s forwards;
   animation: slideInFromLeft 1s ease-in-out 1s forwards;
 }
 .catch-phrase-4 {
   opacity: 0;
+  -webkit-animation: slideInFromLeft 1s ease-in-out 1.3s forwards;
   animation: slideInFromLeft 1s ease-in-out 1.3s forwards;
 }
 
@@ -467,6 +504,16 @@ button {
   display: none;
 }
 
+@-webkit-keyframes slideTop {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 @keyframes slideTop {
   0% {
     transform: translateY(50%);
@@ -479,6 +526,7 @@ button {
 
 @media (prefers-reduced-motion: no-preference) {
   .headline-transition {
+    -webkit-animation: slideTop 0.4s ease-out both;
     animation: slideTop 0.4s ease-out both;
   }
 }
@@ -605,6 +653,7 @@ button {
 
 @media (prefers-reduced-motion: no-preference) {
   .kachel-transition {
+    -webkit-animation: slideInFromRight 0.4s ease-out both;
     animation: slideInFromRight 0.4s ease-out both;
   }
 }
@@ -903,6 +952,17 @@ button {
   margin-top: 0px;
 }
 
+@-webkit-keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes slideInFromTop {
   0% {
     transform: translateY(-100%);
@@ -914,8 +974,15 @@ button {
   }
 }
 
-.mobile-shown-flex{
+.mobile-shown-flex {
   display: none !important;
+}
+
+.no-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
 
 .navbar {
@@ -928,6 +995,7 @@ button {
   z-index: 5;
   background-color: hsla(214, 17%, 8%, 0);
   top: 0;
+
   transition: top 0.3s ease-out 0.2s;
 }
 
@@ -984,7 +1052,7 @@ button {
 }
 
 .process-step {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .process-step-right {
@@ -1131,11 +1199,13 @@ button {
 
 @media (prefers-reduced-motion: no-preference) {
   .right-transition {
+    -webkit-animation: slideInFromLeft 0.4s ease-out both;
     animation: slideInFromLeft 0.4s ease-out both;
   }
 }
 @media (prefers-reduced-motion: no-preference) {
   .left-transition {
+    -webkit-animation: slideInFromRight 0.4s ease-out both;
     animation: slideInFromRight 0.4s ease-out both;
   }
 }
@@ -1198,6 +1268,7 @@ button {
   stroke: #e65238;
 }
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
   height: 300px;
   top: 120px;
@@ -1389,6 +1460,7 @@ button {
   }
   .section4 {
     max-width: 780px;
+    padding: 80 0 150px 0;
   }
 
   .b1 {
@@ -1541,7 +1613,19 @@ button {
 @media only screen and (max-width: 780px) {
   @media (prefers-reduced-motion: no-preference) {
     .catch-transition {
+      -webkit-animation: slideInFromLeftMobile 0.4s ease-in-out both;
       animation: slideInFromLeftMobile 0.4s ease-in-out both;
+    }
+  }
+
+  @-webkit-keyframes slideInFromLeftMobile {
+    0% {
+      transform: translateX(5%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
     }
   }
 
@@ -1558,8 +1642,13 @@ button {
 
   @media (prefers-reduced-motion: no-preference) {
     .kachel-transition {
+      -webkit-animation: none;
       animation: none;
     }
+  }
+
+  .headersection {
+    margin-top: 80px;
   }
 
   .end-logo {
@@ -1686,6 +1775,7 @@ button {
   }
 
   .project-header-section {
+    margin-top: 80px;
     padding: 50px 2.5% 50px;
   }
 
@@ -1718,7 +1808,7 @@ button {
 
   .section4 {
     max-width: 95%;
-    padding: 100px 2.5% 100px;
+    padding: 60px 2.5% 100px;
   }
 
   .active {
@@ -1922,7 +2012,7 @@ button {
   }
 
   .mobile-shown-flex {
-    display: flex !important
+    display: flex !important;
   }
 
   #header-pattern {
@@ -1953,6 +2043,7 @@ button {
     display: flex;
     margin: 25px auto;
     overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
     scroll-snap-type: x mandatory;
     justify-content: center;
     float: right;
@@ -1970,6 +2061,7 @@ button {
     display: flex;
     margin: 25px auto;
     overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
     scroll-snap-type: x mandatory;
     justify-content: center;
     float: right;
@@ -2019,7 +2111,6 @@ button {
 
   .navbar {
     z-index: 4;
-    position: relative;
     display: block;
     margin: 0;
     height: auto;
@@ -2060,6 +2151,22 @@ button {
     transform: translateY(calc(-100vh - 90px));
   }
 
+  @-webkit-keyframes navanimation {
+    0% {
+      transform: translateY(calc(-20vh - 90px));
+      opacity: 0;
+      height: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      height: calc(100vh - 90px);
+    }
+  }
+
   @keyframes navanimation {
     0% {
       transform: translateY(calc(-20vh - 90px));
@@ -2073,6 +2180,25 @@ button {
       transform: translateY(0);
       opacity: 1;
       height: calc(100vh - 90px);
+    }
+  }
+
+  @-webkit-keyframes backanimation {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+      height: calc(100vh - 90px);
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      height: 0;
+      transform: translateY(calc(-20vh - 90px));
     }
   }
 

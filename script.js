@@ -33,26 +33,57 @@ const scrollHandler = (e) => {
   }
 };
 
+let menuBtn = document.querySelector(".menu-btn");
+let menuOpen = false;
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+  }
+});
+
 let prevScrollpos = window.pageYOffset;
+let navbar = document.getElementById("navbar");
+
+let width = window.innerWidth;
+if (width < 780) {
+  addEventListener("scroll", function () {
+    let currentScrollPos = window.pageYOffset;
+    let width = window.innerWidth;
+    if (width < 780) {
+      return;
+    }
+    console.log(currentScrollPos, prevScrollpos);
+    if (prevScrollpos > currentScrollPos) {
+      navbar.style.top = "0";
+      navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0.8)";
+    } else {
+      navbar.style.top = "-90px";
+    }
+    prevScrollpos = currentScrollPos;
+    if (currentScrollPos == 0) {
+      navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0)";
+      navbar.style.top = "0";
+    }
+  });
+}
 
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
-  let width = window.innerWidth;
-  if (width < 780) {
-    return;
-  }
+  console.log(currentScrollPos, prevScrollpos);
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-    document.getElementById("navbar").style.backgroundColor =
-      "hsla(214, 17%, 8%, 0.8)";
+    navbar.style.top = "0";
+    navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0.8)";
   } else {
-    document.getElementById("navbar").style.top = "-90px";
+    navbar.style.top = "-90px";
   }
   prevScrollpos = currentScrollPos;
   if (currentScrollPos == 0) {
-    document.getElementById("navbar").style.top = "0";
-    document.getElementById("navbar").style.backgroundColor =
-      "hsla(214, 17%, 8%, 0)";
+    navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0)";
+    navbar.style.top = "0";
   }
 };
 
@@ -217,7 +248,7 @@ step4.classList.remove("left-transition");
 
 const step4Observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    const step2 = entry.target.querySelector(".left2");
+    const step4 = entry.target.querySelector(".left2");
     if (entry.isIntersecting) {
       step4.classList.add("left-transition");
       return;
@@ -226,22 +257,10 @@ const step4Observer = new IntersectionObserver((entries) => {
   });
 });
 
-step4Observer.observe(document.querySelector(".process-step3"));
+step4Observer.observe(document.querySelector(".process-step-last"));
 
 const projectCarousel = document.getElementById("project-carousel");
 const benefitCarousel = document.getElementById("benefit-carousel");
 
 projectCarousel.addEventListener("scroll", scrollHandler);
 benefitCarousel.addEventListener("scroll", scrollHandler);
-
-const menuBtn = document.querySelector(".menu-btn");
-let menuOpen = false;
-menuBtn.addEventListener("click", () => {
-  if (!menuOpen) {
-    menuBtn.classList.add("open");
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove("open");
-    menuOpen = false;
-  }
-});
