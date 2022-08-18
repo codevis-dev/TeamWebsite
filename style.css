@@ -1313,7 +1313,8 @@ button {
 }
 
 .team-img {
-  width: 100;
+  margin: 0px -24px 0 -12px;
+  width: 150;
   border-radius: 10px;
 }
 
@@ -1710,7 +1711,7 @@ button {
 
   #about-illustration-mobile {
     display: block;
-    width: 90%;
+    width: 80%;
     margin-bottom: 32px;
     z-index: 2;
   }
@@ -2435,7 +2436,7 @@ button {
     height: 24px;
   }
   .team-img {
-    width: 88px;
+    width: 128px;
     border-radius: 10px;
   }
 
@@ -2486,6 +2487,7 @@ button {
   height: 100%;
   position: fixed;
   z-index: 200;
+  top: 0;
 }
 #preloadergif {
   background: url(assets/Double\ Ring-2.9s-331px.gif) no-repeat center center;
@@ -2494,6 +2496,7 @@ button {
   height: 100%;
   position: fixed;
   z-index: 201;
+  top: 0;
 }
 
 .loaded {
