@@ -17,12 +17,9 @@
     <!-- Navigation -->
     <div class="navbar" id="navbar">
       <button class="hamburger" onclick="openNav()">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-          <line x1="4" y1="6" x2="20" y2="6" />
-          <line x1="4" y1="12" x2="20" y2="12" />
-          <line x1="4" y1="18" x2="20" y2="18" />
-        </svg>
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
       </button>
         <div class="logo">
           <a href="index.html" class="logo">
@@ -122,17 +119,15 @@
           <h5 class="logo-text">codevis</h5>
         </a>
         </div>
-      <div class="navigation" id="navigation">
+      <div class="navigation visibility" id="navigation">
         <a class="font2 bold nav-link" href="projects.html">Projekte</a>
         <a class="font2 bold nav-link" href="about.html">Über Uns</a>
-        <a href="contact.html">
-          <button class="font2 bold nav-link button1 navbar-button">Kontakt</button>
-        </a>
+        <button class="font2 bold button1 navbar-button" onclick="window.location.href='contact.html'">Kontakt</button>
       </div>
     </div>
     <!-- End Navigation -->
     <!-- Banner -->
-    <div class="section">
+    <div class="section project-header-section">
     <div class="pattern2">
       <?xml version="1.0" encoding="UTF-8"?><svg id="uuid-6f14e0ff-433f-4b59-8614-2b6cf5e487cf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 742.71 609.9"><g><path d="M.83,0V119.33s103.35,59.67,103.35,59.67V59.67s0-.32,0-.32V-59.67S35.12-20.1,.83,0" style="fill:#192531;"/><polygon points="104.17 179 207.52 119.33 207.52 0 104.17 59.67 104.17 179" style="fill:#161e26;"/><polygon points="310.86 -179 207.52 -238.67 207.52 -119.33 104.17 -59.67 104.17 59.35 104.17 59.67 207.52 0 207.52 0 310.86 -59.67 310.86 -179" style="fill:#21364a;"/></g><g><path d="M104.17,179v119.33s103.35,59.67,103.35,59.67v-119.33s0-.32,0-.32V119.33s-69.05,39.57-103.35,59.67" style="fill:#192531;"/><polygon points="207.52 358 310.86 298.33 310.86 179 207.52 238.67 207.52 358" style="fill:#161e26;"/><polygon points="414.21 0 310.86 -59.67 310.86 59.67 207.52 119.33 207.52 238.35 207.52 238.67 310.86 179 310.86 179 414.21 119.33 414.21 0" style="fill:#21364a;"/><polyline points="207.51 0 207.51 119.33 310.86 59.67 310.86 -59.67 207.51 0" style="fill:#294762;"/></g><g><polygon points="207.52 357.98 104.17 298.32 104.17 417.65 .83 477.32 .83 596.33 .83 596.65 104.17 536.98 104.17 536.98 207.52 477.32 207.52 357.98" style="fill:#21364a;"/><polyline points=".83 357.98 .83 477.32 104.17 417.65 104.17 298.32 .83 357.98" style="fill:#294762;"/></g><g><path d="M414.21,0V119.33s103.35,59.67,103.35,59.67V59.67s0-.32,0-.32V-59.67S448.51-20.1,414.21,0" style="fill:#192531;"/><polygon points="517.55 179 620.9 119.33 620.9 0 517.55 59.67 517.55 179" style="fill:#161e26;"/><polygon points="724.25 -179 620.9 -238.67 620.9 -119.33 517.55 -59.67 517.55 59.35 517.55 59.67 620.9 0 620.9 0 724.25 -59.67 724.25 -179" style="fill:#21364a;"/></g></svg>
     </div>
@@ -142,8 +137,7 @@
       <?xml version="1.0" encoding="UTF-8"?><svg id="project-illustration-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.02 463.96"><defs><style>.cls-1{fill:#f2f2f2;}.cls-2{fill:#ebebeb;}.cls-3{fill:#e65338;}.cls-4{fill:#b4b4b4;}.cls-5{fill:#31587b;}.cls-6{fill:#a9d9db;}.cls-7{fill:#21364a;}.cls-8{fill:#6d98aa;}.cls-9{fill:#9a9999;}.cls-10{fill:#294762;}.cls-11{opacity:.8;}</style></defs><g><polygon class="cls-6" points="97.64 60.17 170.08 101.99 170.08 185.64 97.64 227.46 25.2 185.64 25.2 101.99 97.64 60.17"/><polygon class="cls-6" points="196.25 294.62 257.87 330.2 257.87 401.36 196.25 436.94 134.63 401.36 134.63 330.2 196.25 294.62"/><polygon class="cls-6" points="546.06 27.08 634.3 78.03 634.3 179.93 546.06 230.87 457.81 179.93 457.81 78.03 546.06 27.08"/></g><g><g><g class="cls-11"><path class="cls-8" d="M505.73,356.89H156.72c-19.85,0-35.94-16.09-35.94-35.94V110.34c0-16.68,13.52-30.2,30.2-30.2H505.73c19.85,0,35.94,16.09,35.94,35.94v204.87c0,19.85-16.09,35.94-35.94,35.94Z"/></g><path class="cls-7" d="M542.17,115.98H121.17v-5.47c0-16.68,13.52-30.2,30.2-30.2H511.97c16.68,0,30.2,13.52,30.2,30.2v5.47Z"/><circle class="cls-3" cx="150.7" cy="98.4" r="7.55"/><circle class="cls-6" cx="172.3" cy="98.21" r="7.55"/><circle class="cls-2" cx="194.91" cy="98.17" r="7.55"/></g><g><rect class="cls-2" x="147.89" y="137.86" width="96.9" height="96.66" rx="13.52" ry="13.52"/><rect class="cls-1" x="280.27" y="149.8" width="110.04" height="58.78" rx="11.23" ry="11.23"/><rect class="cls-6" x="260.74" y="134.46" width="59.25" height="38" rx="11.91" ry="11.91"/><rect class="cls-6" x="157.24" y="252.19" width="82.68" height="25.73" rx="7.31" ry="7.31"/><rect class="cls-10" x="158.1" y="287.83" width="82.68" height="14.83" rx="5.55" ry="5.55"/><rect class="cls-6" x="270.13" y="232.62" width="82.68" height="14.83" rx="5.55" ry="5.55"/><rect class="cls-6" x="271.7" y="284.14" width="82.68" height="14.83" rx="5.55" ry="5.55"/><rect class="cls-10" x="158.57" y="311.56" width="82.68" height="14.83" rx="5.55" ry="5.55"/><rect class="cls-10" x="328.42" y="303.34" width="52.87" height="14.83" rx="4.44" ry="4.44"/><rect class="cls-10" x="327.67" y="258.27" width="30.6" height="14.83" rx="3.38" ry="3.38"/><rect class="cls-10" x="287.65" y="257.74" width="30.6" height="14.83" rx="3.38" ry="3.38"/></g><g><ellipse class="cls-9" cx="195.44" cy="165.06" rx="14.51" ry="14.09"/><path class="cls-9" d="M188.16,183.56h13.72c14.54,0,26.34,11.8,26.34,26.34v10.91h-66.41v-10.91c0-14.54,11.8-26.34,26.34-26.34Z"/></g></g><g><g><rect class="cls-7" x="62.57" y="194.05" width="103.66" height="213.77" rx="18.03" ry="18.03"/><path class="cls-5" d="M94.04,193.21h44.33c.82,0,1.48,.66,1.48,1.48v3.45c0,3.95-3.21,7.16-7.16,7.16h-32.98c-3.95,0-7.16-3.21-7.16-7.16v-3.45c0-.82,.66-1.48,1.48-1.48Z"/><rect class="cls-5" x="166.29" y="245.53" width="1.25" height="20.58"/></g><g><rect class="cls-2" x="73.81" y="215.86" width="31.3" height="31.5" rx="15.65" ry="15.65"/><rect class="cls-5" x="89.88" y="399.77" width="44.96" height="4.17" rx="2.09" ry="2.09"/><rect class="cls-6" x="73.97" y="262.37" width="82.51" height="36.76" rx="7.69" ry="7.69"/><rect class="cls-6" x="112.91" y="218.29" width="43.85" height="9.42" rx="3.93" ry="3.93"/><rect class="cls-4" x="113.28" y="232.06" width="43.26" height="4.61" rx="2.31" ry="2.31"/><rect class="cls-3" x="113.49" y="241.06" width="20.38" height="3.3" rx="1.65" ry="1.65"/><rect class="cls-9" x="45.2" y="313.31" width="50.87" height="68.72" rx="8.26" ry="8.26"/><rect class="cls-2" x="104.85" y="313.8" width="50.51" height="68.72" rx="8.23" ry="8.23"/></g><g><ellipse class="cls-3" cx="89.31" cy="226.08" rx="4.41" ry="4.28"/><path class="cls-3" d="M94.61,246.7c-1.03,.27-3.75,.72-5.48,.72-1.69,0-3.1-.27-4.12-.53-3.31-.85-6.18-3.17-6.18-5.83,0-4.56,3.91-8.25,8.74-8.25h3.2c4.83,0,8.74,3.7,8.74,8.25,0,3.22-2.23,4.63-4.91,5.64Z"/></g></g><g><rect class="cls-7" x="363.56" y="171.19" width="234.45" height="168.83" rx="27.64" ry="27.64"/><rect class="cls-5" x="377.02" y="252.98" width="205.42" height="73.66" rx="14.8" ry="14.8"/><rect class="cls-2" x="497.79" y="265.73" width="116.79" height="64.94" rx="12.16" ry="12.16"/><rect class="cls-10" x="456.97" y="186.52" width="125.97" height="12.06" rx="6.02" ry="6.02"/><rect class="cls-10" x="457.16" y="207.23" width="125.97" height="12.06" rx="6.02" ry="6.02"/><rect class="cls-6" x="457.56" y="227.23" width="125.97" height="12.06" rx="6.02" ry="6.02"/><rect class="cls-9" x="376.9" y="182.79" width="71.58" height="56.6" rx="13.72" ry="13.72"/><g><path class="cls-2" d="M390.18,210.5v-2.94l11.22-7.27v3.87l-7.7,4.81v.12l7.7,4.81v3.87l-11.22-7.27Z"/><path class="cls-2" d="M415.92,198.07h3.57l-9.56,25.24h-3.57l9.56-25.24Z"/><path class="cls-2" d="M424.46,213.9l7.7-4.81v-.12l-7.7-4.81v-3.87l11.22,7.27v2.94l-11.22,7.27v-3.87Z"/></g></g><g><polygon class="cls-3" points="488.09 146.92 508.55 158.73 508.55 182.36 488.09 194.17 467.64 182.36 467.64 158.73 488.09 146.92"/><polygon class="cls-3" points="257.49 317.7 283.32 332.61 283.32 362.44 257.49 377.36 231.65 362.44 231.65 332.61 257.49 317.7"/><polygon class="cls-3" points="229.03 24.66 260.05 42.57 260.05 78.39 229.03 96.3 198.01 78.39 198.01 42.57 229.03 24.66"/></g></svg>
         <h1>Projekte</h1>
         <p class="medium subheading">
-          Wir sind junge begeisterte Entwickler von ansprechenden
-          Softwarelösungen für Web und mobile Endgeräte.
+          Von Mobile Games über Websites bishin zu Apps. Wir stellen uns ständig neuen Herausforderungen, um unser Know-How zu erweitern.
         </p>
       </div>
       <?xml version="1.0" encoding="UTF-8"?><svg id="project-illustration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.02 463.96"><defs><style>.cls-1{fill:#f2f2f2;}.cls-2{fill:#ebebeb;}.cls-3{fill:#e65338;}.cls-4{fill:#b4b4b4;}.cls-5{fill:#31587b;}.cls-6{fill:#a9d9db;}.cls-7{fill:#21364a;}.cls-8{fill:#6d98aa;}.cls-9{fill:#9a9999;}.cls-10{fill:#294762;}.cls-11{opacity:.8;}</style></defs><g><polygon class="cls-6" points="97.64 60.17 170.08 101.99 170.08 185.64 97.64 227.46 25.2 185.64 25.2 101.99 97.64 60.17"/><polygon class="cls-6" points="196.25 294.62 257.87 330.2 257.87 401.36 196.25 436.94 134.63 401.36 134.63 330.2 196.25 294.62"/><polygon class="cls-6" points="546.06 27.08 634.3 78.03 634.3 179.93 546.06 230.87 457.81 179.93 457.81 78.03 546.06 27.08"/></g><g><g><g class="cls-11"><path class="cls-8" d="M505.73,356.89H156.72c-19.85,0-35.94-16.09-35.94-35.94V110.34c0-16.68,13.52-30.2,30.2-30.2H505.73c19.85,0,35.94,16.09,35.94,35.94v204.87c0,19.85-16.09,35.94-35.94,35.94Z"/></g><path class="cls-7" d="M542.17,115.98H121.17v-5.47c0-16.68,13.52-30.2,30.2-30.2H511.97c16.68,0,30.2,13.52,30.2,30.2v5.47Z"/><circle class="cls-3" cx="150.7" cy="98.4" r="7.55"/><circle class="cls-6" cx="172.3" cy="98.21" r="7.55"/><circle class="cls-2" cx="194.91" cy="98.17" r="7.55"/></g><g><rect class="cls-2" x="147.89" y="137.86" width="96.9" height="96.66" rx="13.52" ry="13.52"/><rect class="cls-1" x="280.27" y="149.8" width="110.04" height="58.78" rx="11.23" ry="11.23"/><rect class="cls-6" x="260.74" y="134.46" width="59.25" height="38" rx="11.91" ry="11.91"/><rect class="cls-6" x="157.24" y="252.19" width="82.68" height="25.73" rx="7.31" ry="7.31"/><rect class="cls-10" x="158.1" y="287.83" width="82.68" height="14.83" rx="5.55" ry="5.55"/><rect class="cls-6" x="270.13" y="232.62" width="82.68" height="14.83" rx="5.55" ry="5.55"/><rect class="cls-6" x="271.7" y="284.14" width="82.68" height="14.83" rx="5.55" ry="5.55"/><rect class="cls-10" x="158.57" y="311.56" width="82.68" height="14.83" rx="5.55" ry="5.55"/><rect class="cls-10" x="328.42" y="303.34" width="52.87" height="14.83" rx="4.44" ry="4.44"/><rect class="cls-10" x="327.67" y="258.27" width="30.6" height="14.83" rx="3.38" ry="3.38"/><rect class="cls-10" x="287.65" y="257.74" width="30.6" height="14.83" rx="3.38" ry="3.38"/></g><g><ellipse class="cls-9" cx="195.44" cy="165.06" rx="14.51" ry="14.09"/><path class="cls-9" d="M188.16,183.56h13.72c14.54,0,26.34,11.8,26.34,26.34v10.91h-66.41v-10.91c0-14.54,11.8-26.34,26.34-26.34Z"/></g></g><g><g><rect class="cls-7" x="62.57" y="194.05" width="103.66" height="213.77" rx="18.03" ry="18.03"/><path class="cls-5" d="M94.04,193.21h44.33c.82,0,1.48,.66,1.48,1.48v3.45c0,3.95-3.21,7.16-7.16,7.16h-32.98c-3.95,0-7.16-3.21-7.16-7.16v-3.45c0-.82,.66-1.48,1.48-1.48Z"/><rect class="cls-5" x="166.29" y="245.53" width="1.25" height="20.58"/></g><g><rect class="cls-2" x="73.81" y="215.86" width="31.3" height="31.5" rx="15.65" ry="15.65"/><rect class="cls-5" x="89.88" y="399.77" width="44.96" height="4.17" rx="2.09" ry="2.09"/><rect class="cls-6" x="73.97" y="262.37" width="82.51" height="36.76" rx="7.69" ry="7.69"/><rect class="cls-6" x="112.91" y="218.29" width="43.85" height="9.42" rx="3.93" ry="3.93"/><rect class="cls-4" x="113.28" y="232.06" width="43.26" height="4.61" rx="2.31" ry="2.31"/><rect class="cls-3" x="113.49" y="241.06" width="20.38" height="3.3" rx="1.65" ry="1.65"/><rect class="cls-9" x="45.2" y="313.31" width="50.87" height="68.72" rx="8.26" ry="8.26"/><rect class="cls-2" x="104.85" y="313.8" width="50.51" height="68.72" rx="8.23" ry="8.23"/></g><g><ellipse class="cls-3" cx="89.31" cy="226.08" rx="4.41" ry="4.28"/><path class="cls-3" d="M94.61,246.7c-1.03,.27-3.75,.72-5.48,.72-1.69,0-3.1-.27-4.12-.53-3.31-.85-6.18-3.17-6.18-5.83,0-4.56,3.91-8.25,8.74-8.25h3.2c4.83,0,8.74,3.7,8.74,8.25,0,3.22-2.23,4.63-4.91,5.64Z"/></g></g><g><rect class="cls-7" x="363.56" y="171.19" width="234.45" height="168.83" rx="27.64" ry="27.64"/><rect class="cls-5" x="377.02" y="252.98" width="205.42" height="73.66" rx="14.8" ry="14.8"/><rect class="cls-2" x="497.79" y="265.73" width="116.79" height="64.94" rx="12.16" ry="12.16"/><rect class="cls-10" x="456.97" y="186.52" width="125.97" height="12.06" rx="6.02" ry="6.02"/><rect class="cls-10" x="457.16" y="207.23" width="125.97" height="12.06" rx="6.02" ry="6.02"/><rect class="cls-6" x="457.56" y="227.23" width="125.97" height="12.06" rx="6.02" ry="6.02"/><rect class="cls-9" x="376.9" y="182.79" width="71.58" height="56.6" rx="13.72" ry="13.72"/><g><path class="cls-2" d="M390.18,210.5v-2.94l11.22-7.27v3.87l-7.7,4.81v.12l7.7,4.81v3.87l-11.22-7.27Z"/><path class="cls-2" d="M415.92,198.07h3.57l-9.56,25.24h-3.57l9.56-25.24Z"/><path class="cls-2" d="M424.46,213.9l7.7-4.81v-.12l-7.7-4.81v-3.87l11.22,7.27v2.94l-11.22,7.27v-3.87Z"/></g></g><g><polygon class="cls-3" points="488.09 146.92 508.55 158.73 508.55 182.36 488.09 194.17 467.64 182.36 467.64 158.73 488.09 146.92"/><polygon class="cls-3" points="257.49 317.7 283.32 332.61 283.32 362.44 257.49 377.36 231.65 362.44 231.65 332.61 257.49 317.7"/><polygon class="cls-3" points="229.03 24.66 260.05 42.57 260.05 78.39 229.03 96.3 198.01 78.39 198.01 42.57 229.03 24.66"/></g></svg>
@@ -151,26 +145,123 @@
     </div>
     <!-- End Banner -->
     <!-- Projects -->
-    <div class="section">
-      <div class="project blue1">
-        <div class="square-orange2"></div>
+    <div class="section section-project">
+      <div class="project blue3">
+        <div class="square-orange2"> 
+          <svg xmlns="http://www.w3.org/2000/svg" class="kind-icon2 icon-tabler icon-tabler-device-mobile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#780000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="7" y="4" width="10" height="16" rx="1" />
+          <line x1="11" y1="5" x2="13" y2="5" />
+          <line x1="12" y1="17" x2="12" y2="17.01" />
+        </svg></div>
         <div class="section-flex">
           <div class="project-left">
-            <h4>TuneClash</h4>
-            <p class="font1 semibold">MOBILE APP ● 2022</p>
-            <p class="font2">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.ibero.
-            </p>
-            <button class="b1">
-              <span>Details</span>
+          <div>
+          <h4 class="projectheading">TicTacToe</h4>
+          <p class="font1 semibold lessmargin">MOBILE APP  <span style="color:#e65238" class="dot-size">●</span>  2022</p>
+          <p class="font2 regular">
+            TuneClash ist ein rundenbasiertes Musikspiel, dass du mit deinen Freunden spielen kannst.
+          </p>
+        </div>
+        <button class="future-button2">
+          <span class="font2 secondary semibold">Coming Soon</span>
+        </button>
+          </div>
+          <div class="project-right">
+          <div></div>
+          <img
+            src="./assets/TicTacToe.png"
+            class="project-img-ttt"
+          />
+        </div>
+        </div>
+      </div>
+      <div class="project blue1">
+        <div class="square-orange2"> 
+          <svg xmlns="http://www.w3.org/2000/svg" class="desk-icon2 icon-tabler icon-tabler-device-desktop" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#780000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="3" y="4" width="18" height="12" rx="1" />
+            <line x1="7" y1="20" x2="17" y2="20" />
+            <line x1="9" y1="16" x2="9" y2="20" />
+            <line x1="15" y1="16" x2="15" y2="20" />
+          </svg>
+      </div>
+        <div class="section-flex">
+          <div class="project-left">
+          <div>
+          <h4 class="projectheading">Teamwebsite</h4>
+          <p class="font1 semibold lessmargin">WEBSITE  <span style="color:#e65238" class="dot-size">●</span>  2022</p>
+          <p class="font2 regular">
+            Unsere Website entwickelt sich stetig weiter und gilt für uns als Spieplatz zum Ausprobieren neuer Designs.
+          </p>
+        </div>
+            <button class="kachel-button project-button no-color">
+             <!-- <span class="font2 semibold prm">Details</span>
               <span class="arrow fa-solid fa-chevron-right"></span>
-            </span>
+            </span> -->
             </button>
           </div>
+          <div class="project-right">
+          <div></div>
           <img
-            src="https://dummyimage.com/350x300/ffffff/000000"
-            class="project-right"
+            src="./assets/TeamWebsite.png"
+            class="project-img-tw"
           />
+        </div>
+        </div>
+      </div>
+      <div class="project blue3">
+        <div class="square-orange2"> 
+          <svg xmlns="http://www.w3.org/2000/svg" class="kind-icon2 icon-tabler icon-tabler-device-mobile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#780000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="7" y="4" width="10" height="16" rx="1" />
+          <line x1="11" y1="5" x2="13" y2="5" />
+          <line x1="12" y1="17" x2="12" y2="17.01" />
+        </svg></div>
+        <div class="section-flex">
+          <div class="project-left">
+          <div>
+          <h4 class="projectheading">TuneClash</h4>
+          <p class="font1 semibold lessmargin">MOBILE APP  <span style="color:#e65238" class="dot-size">●</span>  2022</p>
+          <p class="font2 regular">
+            TuneClash ist ein rundebasiertes Musikspiel, dass du mit deinen Freunden spielen kannst.
+          </p>
+        </div>
+        <button class="future-button2">
+          <span class="font2 secondary semibold">Coming Soon</span>
+        </button>
+          </div>
+          <div class="project-right">
+          <div></div>
+          <img
+            src="./assets/TuneClash.png"
+            class="project-img"
+          />
+        </div>
+        </div>
+      </div>
+      <div class="project blue1">
+        <div class="square-orange2"> 
+          <svg xmlns="http://www.w3.org/2000/svg" class="kind-icon2 icon-tabler icon-tabler-device-mobile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#780000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="7" y="4" width="10" height="16" rx="1" />
+          <line x1="11" y1="5" x2="13" y2="5" />
+          <line x1="12" y1="17" x2="12" y2="17.01" />
+        </svg></div>
+        <div class="section-flex">
+          <div class="project-left">
+          <div>
+          <h4 class="projectheading">Never Bored</h4>
+          <p class="font1 semibold lessmargin">MOBILE APP  <span style="color:#e65238" class="dot-size">●</span>  2023</p>
+          <p class="font2 regular">
+            NeverBoard wird eine App um Ideen für Aktivitäten zu teilen und zu finden. Wir wollen die App Anfang 2023 auf den Markt bringen.
+          </p>
+        </div>
+        <button class="future-button">
+          <span class="font2 secondary semibold">Coming Soon</span>
+        </button>
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -178,6 +269,9 @@
     <!-- Footer -->
     <div class="ellipse black"></div>
     <div class="footer">
+      <button class="button1 b1 footer-mobile-shown footer-button" onclick="window.location.href='contact.html'">
+        <span class='footer-button-text'>Kontakt</span>
+      </button>
       <div class="end-logo">
         <a href="index.html" class="end-logo">
         <?xml version="1.0" encoding="utf-8"?>
@@ -277,10 +371,9 @@
       </a>
       </div>        
     <div class="footer-column-container">
-      <div class="footer-column footer-col1">
+      <div class="footer-column footer-col1 footer-mobile-hidden">
         <p class="footer-mobile-hidden">
-          Wir sind geil und deswegen steht hier nochmal nen geiler Spruch mit
-          Schmackes zu was uns ausmacht du negga
+          Folge uns auf unseren Social Media Kanälen um nichts zu verpassen.
         </p>
         <div class="social-media">
           <a href="http://twitter.com/">
@@ -324,17 +417,58 @@
       </div>
       <div class="footer-column footer-col2">
         <h6 class="footer-mobile-hidden" id="fpad">Übersicht</h6>
-        <a class="footer-link">Projekte</a>
-        <a class="footer-link">Über uns</a>
-        <a class="footer-link">Kontakt</a>
+        <a class="footer-link" href="./projects.html">Projekte</a>
+        <a class="footer-link" href="./about.html">Über uns</a>
+        <a class="footer-link footer-mobile-hidden" href="./contact.html">Kontakt</a>
+      </div>
+      <div class="footer-column footer-col1 footer-mobile-shown">
+        <div class="social-media">
+          <a href="http://twitter.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" class="social-media-icon icon-tabler icon-tabler-brand-linkedin" width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="8" y1="11" x2="8" y2="16" />
+            <line x1="8" y1="8" x2="8" y2="8.01" />
+            <line x1="12" y1="16" x2="12" y2="11" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg>
+          </a>
+          <a href="http://twitter.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" class="social-media-icon icon-tabler icon-tabler-brand-twitter" width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+          </svg>
+          </a>
+          <a href="http://twitter.com/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="social-media-icon icon-tabler icon-tabler-brand-instagram" width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="4" y="4" width="16" height="16" rx="4" />
+              <circle cx="12" cy="12" r="3" />
+              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+            </svg>
+          </a>
+          <a href="http://twitter.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" class="social-media-icon icon-tabler icon-tabler-brand-facebook" width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+          </svg>
+          </a>
+          <a href="http://twitter.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" class="social-media-icon icon-tabler icon-tabler-brand-youtube" width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="3" y="5" width="18" height="14" rx="4" />
+            <path d="M10 9l5 3l-5 3z" />
+          </svg>
+          </a>
+        </div>
       </div>
       <div class="footer-column footer-col3">
         <h6 class="footer-mobile-hidden fpad">Rechtliches</h6>
-        <a class="footer-link">AGB</a>
-        <a class="footer-link">Impressum</a>
-        <a class="footer-link">Datenschutzerklärung</a>
+        <a class="footer-link" href="./impressum.html">Impressum</a>
+        <a class="footer-link" href="./dsgvo.html">Datenschutzerklärung</a>
       </div>
     </div>
+    <p class="footer-copyright">© codevis 2022</p>
     </div>
     <!-- End Footer -->
   </body>

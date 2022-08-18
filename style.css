@@ -99,6 +99,10 @@ button {
   width: 55%;
 }
 
+.aboutp {
+  font-size: 18px;
+}
+
 .align-center {
   text-align: center;
   margin-bottom: 50px;
@@ -229,16 +233,11 @@ button {
   font-weight: 700;
   border: 0;
   opacity: 0;
+  transition: all 0.4s ease-out;
 }
 .button-scta:hover {
   background: #a8dadc;
   color: #111418;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .button-scta {
-    transition: all 0.4s ease-out;
-  }
 }
 
 .button-transition {
@@ -334,8 +333,23 @@ button {
   width: 40%;
 }
 
+.dsgvo-section {
+  padding: 20 0 80 0 !important;
+}
+
+.dsgvoh3 {
+  margin: 50 0 10 0;
+}
+.dsgvoh5 {
+  margin: 30 0 0 0;
+}
+
 .dot-container {
   display: none;
+}
+
+.dot-size {
+  font-size: 22px;
 }
 
 .ellipse {
@@ -406,20 +420,26 @@ button {
   display: none;
 }
 
+.footer-copyright {
+  color: grey;
+  font-size: 14px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
-  padding: 30px 20px 0 30px;
+  padding: 50px 20px 0 30px;
 }
 
 .form-left {
   width: 45%;
-  border-radius: 40px;
+  border-radius: 70px;
+  height: 945px;
 }
 
 .form-right {
   width: 55%;
-  border-radius: 40px;
+  border-radius: 70px;
 }
 
 .form-image {
@@ -431,7 +451,7 @@ button {
   font-size: 30px;
   position: relative;
   left: 50px;
-  bottom: 45px;
+  bottom: 200px;
   z-index: 1;
 }
 
@@ -487,14 +507,22 @@ button {
 
 .input {
   width: 90%;
-  padding: 10px;
+  padding: 15px;
   margin: 20px auto;
   color: #b9b7bd;
   border-width: 1px;
-  border-color: grey;
+  border-color: #294762;
   border-style: solid;
-  border-radius: 12px;
+  border-radius: 14px;
   font-family: "Poppins" !important;
+  font-size: 18;
+  resize: none;
+}
+
+.no-color {
+  background: none !important;
+  background-color: none !important;
+  color: none !important;
 }
 
 .input-large {
@@ -504,9 +532,11 @@ button {
 .input-submit {
   background-color: #e65238;
   color: #ebebeb;
-  border-radius: 15px;
+  border-radius: 20px;
   border-width: 0;
   width: 75%;
+  height: 60px;
+  font-weight: 700;
 }
 
 .gradient {
@@ -525,9 +555,12 @@ button {
 .square-orange {
   border-style: hidden;
   border-radius: 8px;
-  height: 21px;
-  width: 21px;
+  height: 22px;
+  width: 22px;
   background-color: #e65238;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .square-orange2 {
@@ -536,11 +569,26 @@ button {
   height: 32px;
   width: 32px;
   background-color: #e65238;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .kachel {
   width: 26%;
   height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 10px;
+  opacity: 1;
+  transition: transform 0.2s ease-out;
+}
+.project-kachel {
+  width: 26%;
+  height: 340px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -573,7 +621,18 @@ button {
   background: #a8dadc;
   border-radius: 10px;
   border: 0;
+  margin-top: 4px;
   transition: all 0.4s ease-out;
+}
+
+.future-kachel-button {
+  width: 50%;
+  height: 30px;
+  color: #a8dadc;
+  background: none;
+  border-radius: 10px;
+  border: 2px solid #a8dadc;
+  margin-top: 4px;
 }
 
 .kachel-button:hover {
@@ -607,13 +666,23 @@ button {
   height: 750px;
 }
 
-.kachel-image {
-  width: 170;
-  height: 100;
-  padding: 10px;
-  border-radius: 20px;
+.kachel-image1 {
+  width: 150px;
   display: block;
+  margin-bottom: -20px;
+  margin-top: -20px;
   margin-left: auto;
+}
+.kachel-image2 {
+  width: 280px;
+  display: block;
+  margin-bottom: -20px;
+  margin-left: -20px;
+}
+.kachel-image3 {
+  width: 200;
+  display: block;
+  margin: -20px 0 -20px auto;
 }
 
 .kachel-top-margin {
@@ -662,16 +731,43 @@ button {
   z-index: 7;
 }
 
+.kachel-group:hover .why-icon,
+.kachel-group:hover .why-icon2 {
+  stroke: #111418;
+}
+
 .kachel-group:hover .kachel-vert {
   color: #111418;
   transform: translateY(-5%);
 }
 
 .kachel-vert-parent {
-  margin: 50px 20px 200px;
+  margin: 0px 0px 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: -80px;
+}
+
+.kind-icon {
+  width: 18px;
+  height: 18px;
+}
+.kind-icon2 {
+  width: 28px;
+  height: 28px;
+  stroke-width: 2.5;
+}
+
+.desk-icon2 {
+  width: 26px;
+  height: 26px;
+  stroke-width: 2.5;
+}
+
+.desk-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .icon-light {
@@ -682,6 +778,9 @@ button {
   position: relative;
   left: 15px;
   top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.2s ease-out both;
 }
 
@@ -700,11 +799,11 @@ button {
 }
 
 .icon-step-right {
-  left: -48px;
+  left: -60px;
   top: 39px;
 }
 .icon-step-left {
-  left: 353px;
+  left: 350px;
   top: 39px;
 }
 
@@ -716,10 +815,32 @@ button {
   position: relative;
   left: 15px;
   top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-tabler-map-pin {
   margin-right: 15px;
+}
+
+.icon-brand {
+  width: 36px;
+}
+
+.icon-brand-firebase {
+  width: 24px;
+}
+
+.icon-brand-notion {
+  width: 28px;
+}
+.icon-brand-github {
+  width: 32px;
+}
+.icon-brand-html {
+  width: 32px;
+  margin-bottom: -2px;
 }
 
 .icon-top {
@@ -729,6 +850,13 @@ button {
   width: 56px;
   height: 56px;
   z-index: 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lessmargin {
+  margin: 8 0 12 0;
 }
 
 .location {
@@ -769,6 +897,10 @@ button {
   padding: 0 10px;
   font-weight: 700;
   margin: 0;
+}
+
+.marginh2 {
+  margin-top: 0px;
 }
 
 @keyframes slideInFromTop {
@@ -853,19 +985,58 @@ button {
 
 .process-step-right {
   text-align: left;
-  margin-left: 70%;
+  margin-left: 71%;
 }
 
 .process-step-left {
   text-align: right;
-  width: 30%;
+  width: 29%;
 }
 
 .project {
-  width: 90%;
   border-radius: 40px;
   padding: 50px;
   margin: auto;
+  margin: 64 0;
+}
+
+.projectheading {
+  margin-top: 20px;
+}
+
+.prm {
+  margin-top: 2px;
+}
+
+.project-button {
+  height: 50px;
+  width: 60%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.future-button {
+  border-radius: 10px;
+  border: 4px solid #294762;
+  background: none;
+  height: 50px;
+  width: 60%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.future-button2 {
+  border-radius: 10px;
+  border: 4px solid #a8dadc;
+  background: none;
+  height: 50px;
+  width: 60%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #project-illustration {
@@ -884,13 +1055,34 @@ button {
 }
 
 .project-left {
-  width: 60%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-right {
   width: 40%;
   max-width: 350px;
   height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: -50px 0;
+}
+
+.project-img {
+  margin: 0 0 0 60px;
+  width: 400px;
+  align-self: flex-end;
+}
+.project-img-tw {
+  width: 600px;
+  align-self: flex-end;
+}
+.project-img-ttt {
+  margin: 0 0 0 160px;
+  width: 300px;
+  align-self: flex-end;
 }
 
 .subheading {
@@ -920,6 +1112,7 @@ button {
 
 .benefit-text {
   padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 10px;
 }
 
@@ -943,7 +1136,8 @@ button {
   }
 }
 
-.section {
+.section,
+.headersection {
   max-width: 1130px;
   padding: 200px 0 100px 0;
   margin: auto;
@@ -954,9 +1148,13 @@ button {
   margin: auto;
 }
 
+.section-project {
+  padding: 0 !important;
+}
+
 .section2 {
   max-width: 1280px;
-  padding: 200px 0 100px;
+  padding: 200px 0 40px;
   margin: auto;
 }
 
@@ -964,6 +1162,9 @@ button {
   max-width: 1130px;
   padding: 100px 0;
   margin: auto;
+}
+.section-why {
+  padding: 70px 0 200px;
 }
 
 .section4 {
@@ -982,7 +1183,7 @@ button {
 }
 
 .social-media {
-  margin-top: 8px;
+  margin: 8px 0;
 }
 
 .social-media-icon {
@@ -1013,7 +1214,9 @@ button {
 }
 
 .success-image {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .team {
@@ -1034,6 +1237,36 @@ button {
   padding-left: 25px;
 }
 
+.team-img {
+  width: 100;
+  border-radius: 10px;
+}
+
+.team-name {
+  margin: 10 0 0 0 !important;
+}
+
+.team-position {
+  margin: 5 0 10 0;
+}
+
+.team-icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2.2;
+}
+
+.team-smicon {
+  stroke: #a8dadc;
+  stroke-width: 1.75px;
+  margin: 0 6 0 -3px !important;
+  padding: 0;
+}
+
+.team-description {
+  margin: 5 5 0 5;
+}
+
 .white {
   background-color: #ebebeb;
   color: #21364a;
@@ -1047,6 +1280,21 @@ button {
 
 .why-text {
   margin: 10px 100px 20px;
+}
+
+.why-icon {
+  stroke: #294762;
+  width: 36px;
+  stroke-width: 2;
+  margin-top: -2px;
+  transition: transform 0.2s ease-out;
+}
+.why-icon2 {
+  stroke: #294762;
+  width: 28px;
+  stroke-width: 2.75;
+  margin-top: -2px;
+  transition: transform 0.2s ease-out;
 }
 
 #header-pattern-extended {
@@ -1085,6 +1333,19 @@ button {
     font-size: 23px;
   }
 
+  .project-img {
+    margin-left: 20px;
+    width: 120%;
+  }
+  .project-img-tw {
+    margin-left: -50px;
+    width: 160%;
+  }
+  .project-img-ttt {
+    margin-left: 40px;
+    width: 100%;
+  }
+
   h6 {
     font-size: 20px;
   }
@@ -1093,8 +1354,16 @@ button {
     font-size: 18px;
   }
 
-  .section {
+  .text-margin {
+    margin: 10px;
+  }
+
+  .headersection {
     max-width: 780px;
+  }
+
+  .section {
+    width: 80%;
   }
 
   .section-form {
@@ -1103,13 +1372,17 @@ button {
 
   .section2 {
     max-width: 780px;
-    padding: 100px 0 200px;
+    padding: 100px 0 340px;
   }
 
   .section3 {
     max-width: 780px;
+    padding: 50 0 50 0;
   }
 
+  .section-why {
+    padding: 50px 2.5% 250px;
+  }
   .section4 {
     max-width: 780px;
   }
@@ -1138,10 +1411,8 @@ button {
     font-size: 32px;
   }
 
-  .form-image {
-    width: 250px;
-    height: 700px;
-    left: 100px;
+  #form-illustration {
+    height: 945px;
   }
 
   .icon-step-left {
@@ -1156,11 +1427,17 @@ button {
 
   .input-submit {
     font-size: 16px;
-    font-weight: 700;
   }
 
   .kachel {
     width: 37%;
+  }
+  .project-kachel {
+    width: 37%;
+  }
+
+  .kachel-vert-parent {
+    margin-left: auto;
   }
 
   .kachel-col3 {
@@ -1168,7 +1445,7 @@ button {
   }
 
   .kachel-group {
-    margin: 0 10px;
+    margin: 0 15px;
   }
 
   .kachel-top-margin {
@@ -1248,12 +1525,78 @@ button {
     margin-bottom: 20px;
   }
 
+  .aboutp {
+    font-size: 16px;
+  }
+
   .team-flex {
     flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 780px) {
+  @media (prefers-reduced-motion: no-preference) {
+    .catch-transition {
+      animation: slideInFromLeftMobile 0.4s ease-in-out both;
+    }
+  }
+
+  @keyframes slideInFromLeftMobile {
+    0% {
+      transform: translateX(5%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .kachel-transition {
+      animation: none;
+    }
+  }
+
+  .end-logo {
+    margin: 0;
+    margin-top: 12px;
+  }
+
+  .form {
+    padding: 10px 20px 0 20px;
+  }
+
+  .lessmargin {
+    margin: 0 0 8 0;
+    font-size: 16px;
+  }
+
+  .input {
+    padding: 12 15;
+    font-size: 15px;
+  }
+
+  .input-submit {
+    height: 50px;
+  }
+
+  .project-left {
+    width: 100%;
+  }
+
+  .project-img {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .project-img-tw {
+    width: 100%;
+  }
+  .project-img-ttt {
+    width: 100%;
+  }
+
   #project-illustration {
     display: none;
   }
@@ -1266,6 +1609,10 @@ button {
   }
   #about-illustration {
     display: none;
+  }
+
+  .aboutp {
+    font-size: 16px;
   }
 
   #about-illustration-mobile {
@@ -1285,8 +1632,27 @@ button {
     z-index: 2;
   }
 
+  .dsgvoh1 {
+    font-size: 36;
+  }
+
+  .dsgvoh3 {
+    font-size: 32;
+  }
+  .dsgvoh5 {
+    font-size: 21;
+  }
+
   h1 {
-    font-size: 45px;
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 36px;
   }
 
   h4 {
@@ -1305,17 +1671,26 @@ button {
     font-size: 14px;
   }
 
-  .font1 {
-    font-size: 14px;
-  }
-
   .font2 {
     font-size: 14px;
   }
 
-  .section {
+  .section,
+  .headersection {
     max-width: 75%;
     padding: 50px 2.5% 100px;
+  }
+
+  .project-header-section {
+    padding: 50px 2.5% 50px;
+  }
+
+  .section-project {
+    max-width: 90%;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .section-form {
@@ -1329,7 +1704,12 @@ button {
 
   .section3 {
     max-width: 95%;
-    padding: 100px 2.5% 100px;
+    padding: 50px 2.5% 100px;
+  }
+
+  .section-why {
+    padding: 50px 2.5% 150px;
+    max-width: 90%;
   }
 
   .section4 {
@@ -1338,7 +1718,13 @@ button {
   }
 
   .active {
-    background-color: grey !important;
+    background-color: #ebebeb !important;
+  }
+
+  .tech-description {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10 0;
   }
 
   .b1 {
@@ -1368,7 +1754,7 @@ button {
   }
 
   .catch2 {
-    font-size: 35px;
+    font-size: 36px;
   }
 
   .catch3 {
@@ -1388,7 +1774,7 @@ button {
     height: 10px;
     width: 10px;
     margin: 0 2px;
-    background-color: #ebebeb;
+    background-color: grey;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -1397,6 +1783,11 @@ button {
   .dot-container {
     display: block;
     text-align: center;
+    margin-top: -20px;
+  }
+
+  .dot-size {
+    font-size: 18px;
   }
 
   .end-logo {
@@ -1435,17 +1826,24 @@ button {
     margin: 10px 0;
   }
 
+  .footer-button-text {
+    font-size: 20px;
+  }
+
   .footer-col2 > a {
-    padding: 10px 0;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
   }
 
   .footer-col3 {
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 16 0 24 0;
   }
 
   .footer-col3 > a {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .form-left {
@@ -1530,6 +1928,10 @@ button {
     margin-top: 5px;
     width: 250px;
   }
+  .project-kachel {
+    margin-top: 5px;
+    width: 250px;
+  }
 
   .kachel-col1 {
     width: 90%;
@@ -1600,7 +2002,7 @@ button {
   .kachel-vert-parent {
     flex-direction: column;
     align-items: center;
-    height: 400px;
+    height: 500px;
   }
 
   .logo {
@@ -1615,6 +2017,19 @@ button {
     height: auto;
   }
 
+  .nav-link {
+    font-size: 22;
+    margin: 50px;
+  }
+
+  .navbar-button {
+    font-size: 22;
+    margin: 25;
+    width: 240px;
+    height: 60px;
+    border-radius: 20px !important;
+  }
+
   .navbar-toggle {
     background-color: #111418;
   }
@@ -1624,6 +2039,7 @@ button {
   }
 
   .navigation {
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1704,6 +2120,7 @@ button {
   .project {
     width: 80%;
     padding: 25px;
+    margin: 24 0;
   }
 
   .project-first-child {
@@ -1718,10 +2135,34 @@ button {
     height: 500px;
   }
 
+  .project-img-tw {
+    width: 140%;
+  }
+  .project-img-ttt {
+    margin: 0 0 0 -40px;
+    width: 180px;
+  }
+
+  .prm {
+    font-size: 16px;
+    margin-left: 16px;
+    margin-top: -1.5px;
+  }
+
+  .kind-icon2 {
+    width: 22px;
+    height: 22px;
+  }
+  .desk-icon2 {
+    width: 20px;
+    height: 20px;
+  }
+
   .project-right {
-    width: 70%;
+    width: 100%;
+    height: 250px;
     max-width: 250px;
-    margin-left: auto;
+    margin: -25px 0 -25px auto;
   }
 
   .slide {
@@ -1737,6 +2178,9 @@ button {
 
   .sticky {
     height: auto;
+    position: relative;
+    top: 0;
+    margin-bottom: 16px;
   }
 
   .story-flex {
@@ -1753,12 +2197,14 @@ button {
   }
 
   .subheading {
-    font-size: 18px;
+    font-size: 16px;
+    margin-top: 22px;
+    line-height: 30px;
   }
 
   .success-image {
-    margin: auto;
-    display: block;
+    width: 100%;
+    border-radius: 20px;
   }
 
   .visibility {
@@ -1769,9 +2215,12 @@ button {
     width: 95%;
   }
 
+  .techhead {
+    font-size: 36;
+  }
+
   .why-text {
-    width: 95%;
-    margin: 10px 0;
+    margin: 5 0 15 0;
   }
 }
 
@@ -1785,6 +2234,32 @@ button {
     width: 90px;
   }
 
+  .dsgvoh1 {
+    font-size: calc(100vw * 0.065);
+  }
+  .dsgvop {
+    font-size: 14;
+  }
+
+  .mini {
+    font-size: 12;
+  }
+
+  .dsgvoh3 {
+    font-size: 24;
+  }
+  .dsgvoh5 {
+    font-size: 20;
+  }
+
+  .aboutp {
+    font-size: 14px;
+  }
+
+  .kachel-vert-parent {
+    height: 580px;
+  }
+
   .pattern {
     width: 90%;
     top: calc(-1.0769230769231 * 100vw + 603.84615384615px);
@@ -1796,13 +2271,38 @@ button {
   }
 
   .project {
-    padding: 20px;
+    padding: 25px;
+    border-radius: 25px;
+  }
+
+  .section-about {
+    width: 90%;
+    max-width: 90%;
+  }
+  .team-position {
+    font-size: 12px;
+    margin: 12 0 12 0;
   }
 
   .social-media-icon {
+    padding: 0 4;
+    width: 32px;
+    height: 32px;
+  }
+
+  .team-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .team-smicon {
     padding: 0;
     width: 24px;
     height: 24px;
+  }
+  .team-img {
+    width: 88px;
+    border-radius: 10px;
   }
 
   .square-orange2 {
@@ -1812,6 +2312,7 @@ button {
 
   .team-header {
     line-height: 1;
+    padding-left: 14px;
   }
 
   .team-header > .font1 {
@@ -1819,6 +2320,16 @@ button {
   }
 }
 
+@media only screen and (max-width: 350px) {
+  .team-name {
+    font-size: 18px;
+  }
+
+  .team-position {
+    font-size: 10px;
+    margin: -5 0 10 0;
+  }
+}
 @media only screen and (max-width: 300px) {
   h1 {
     font-size: 60px;
