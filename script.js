@@ -17,6 +17,29 @@ const openNav = () => {
   }
 };
 
+const validateEmail = (email) => {
+  return email.match(
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  );
+};
+
+const emailLabel = document.getElementById("email-label");
+const email = document.getElementById("email");
+if (email) {
+  email.addEventListener("focusout", (event) => {
+    console.log(validateEmail(email.value));
+    if (validateEmail(email.value)) {
+      event.target.style.borderColor = "#a8dadc";
+      event.target.style.borderWidth = "1px";
+      emailLabel.classList.add("no-message");
+    } else {
+      event.target.style.borderColor = "#e65238";
+      event.target.style.borderWidth = "1px";
+      emailLabel.classList.remove("no-message");
+    }
+  });
+}
+
 const toggleDots = (n, kind) => {
   const dots = document.getElementsByClassName(`${kind}-dot`);
   for (i = 0; i < dots.length; i++) {

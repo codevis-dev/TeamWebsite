@@ -553,11 +553,17 @@ button {
   opacity: 0;
 }
 
+.input-message {
+  font-size: 12px;
+  margin: 0 20 -15 30;
+  color: #e65238;
+}
+
 .input {
   width: 90%;
   padding: 15px;
   margin: 20px auto;
-  color: #b9b7bd;
+  color: #ebebeb;
   border-width: 1px;
   border-color: #294762;
   border-style: solid;
@@ -565,6 +571,21 @@ button {
   font-family: "Poppins" !important;
   font-size: 18;
   resize: none;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  color: #ebebeb;
+}
+
+.no-message {
+  display: none;
+}
+
+.input:focus-visible {
+  color: #ebebeb;
+  border: 1px solid #a8dadc;
+  outline: none;
 }
 
 .no-color {
@@ -1292,6 +1313,10 @@ button {
   margin-bottom: 30px;
   width: 100%;
   border-radius: 20px;
+}
+
+.thanks-container {
+  padding: 10%;
 }
 
 .team {
