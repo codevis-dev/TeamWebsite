@@ -71,11 +71,15 @@ h6 {
 }
 
 .font4 {
-  font-size: 12;
+  font-size: 14;
 }
 
 .font5 {
-  font-size: 11;
+  font-size: 13;
+}
+
+.font6 {
+  font-size: 12;
 }
 
 .font-form {
@@ -160,6 +164,19 @@ button {
   right: 0px;
   z-index: 1;
   width: 750px;
+}
+
+.logo3d {
+  position: absolute;
+  z-index: 2;
+  width: 64px;
+  top: 290px;
+  left: 161px;
+  transition: all 0.2s ease-out;
+}
+
+.logo3d:hover {
+  transform: translateY(-30px);
 }
 
 .pattern2 {
@@ -379,6 +396,7 @@ button {
 }
 .dsgvoh5 {
   margin: 30 0 0 0;
+  opacity: 1;
 }
 
 .dot-container {
@@ -1243,6 +1261,10 @@ button {
   margin: auto;
 }
 
+.section-about2 {
+  padding-top: 64px;
+}
+
 .section-project {
   padding: 0 !important;
 }
@@ -1342,6 +1364,9 @@ button {
   width: 150;
   border-radius: 10px;
 }
+.team-img2 {
+  margin: 0px -16px 0 -16px;
+}
 
 .team-name {
   margin: 10 0 0 0 !important;
@@ -1366,6 +1391,7 @@ button {
 
 .team-description {
   margin: 5 5 0 5;
+  font-size: 17px;
 }
 
 .white {
@@ -1410,6 +1436,11 @@ button {
 }
 
 @media only screen and (max-width: 1900px) {
+  .logo3d {
+    top: 312px;
+    left: 360px;
+  }
+
   #header-pattern-extended {
     display: none;
   }
@@ -1450,9 +1481,12 @@ button {
   h6 {
     font-size: 20px;
   }
-
+  .sticky {
+    margin-left: -8px;
+  }
   span {
     font-size: 18px;
+    opacity: 1 !important;
   }
 
   .text-margin {
@@ -1568,6 +1602,12 @@ button {
 
   .kachel-vert {
     width: auto;
+  }
+
+  .logo3d {
+    width: 48px;
+    top: 228px;
+    left: 264px;
   }
 
   .navbar-button {
@@ -1731,6 +1771,16 @@ button {
   }
 
   .aboutp {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  .aboutp2 {
+    margin-top: 16px;
+    margin-bottom: 0px;
+  }
+
+  .team-description {
     font-size: 16px;
   }
 
@@ -1775,7 +1825,7 @@ button {
   }
 
   h4 {
-    font-size: 25px;
+    font-size: 36px;
   }
 
   h5 {
@@ -2135,6 +2185,12 @@ button {
     height: 100px;
   }
 
+  .logo3d {
+    width: 10%;
+    top: calc(0.71875 * 100vw + 16.1875px);
+    left: calc(0.31937172774869 * 100vw + 4.3455497382199px);
+  }
+
   .navbar {
     z-index: 4;
     display: block;
@@ -2341,6 +2397,7 @@ button {
     position: relative;
     top: 0;
     margin-bottom: 16px;
+    margin-left: auto;
   }
 
   .story-flex {
@@ -2394,6 +2451,16 @@ button {
     width: 90px;
   }
 
+  .team-description {
+    font-size: 14px;
+  }
+
+  .logo3d {
+    width: 10%;
+    top: calc(0.95 * 100vw);
+    left: 46.5%;
+  }
+
   .dsgvoh1 {
     font-size: calc(100vw * 0.065);
   }
@@ -2414,10 +2481,15 @@ button {
 
   .aboutp {
     font-size: 14px;
+    line-height: 1.7;
   }
 
   .kachel-vert-parent {
     height: 580px;
+  }
+
+  h4 {
+    font-size: 25px;
   }
 
   .pattern {
