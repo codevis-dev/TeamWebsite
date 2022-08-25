@@ -76,37 +76,35 @@ if (width < 780) {
   addEventListener("scroll", function () {
     let currentScrollPos = window.pageYOffset;
     let width = window.innerWidth;
-    if (width < 780) {
-      return;
-    }
-    if (prevScrollpos > currentScrollPos) {
+    if (prevScrollpos > currentScrollPos || currentScrollPos < 20) {
       navbar.style.top = "0";
       navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0.8)";
     } else {
       navbar.style.top = "-90px";
     }
     prevScrollpos = currentScrollPos;
-    if (currentScrollPos == 0) {
+    if (currentScrollPos < 20) {
       navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0)";
       navbar.style.top = "0";
     }
   });
+} else {
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    console.log(currentScrollPos, prevScrollpos);
+    if (prevScrollpos > currentScrollPos || currentScrollPos < 20) {
+      navbar.style.top = "0";
+      navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0.8)";
+    } else {
+      navbar.style.top = "-90px";
+    }
+    prevScrollpos = currentScrollPos;
+    if (currentScrollPos < 20) {
+      navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0)";
+      navbar.style.top = "0";
+    }
+  };
 }
-
-window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    navbar.style.top = "0";
-    navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0.8)";
-  } else {
-    navbar.style.top = "-90px";
-  }
-  prevScrollpos = currentScrollPos;
-  if (currentScrollPos == 0) {
-    navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0)";
-    navbar.style.top = "0";
-  }
-};
 
 let loader = document.getElementById("preloader");
 let gifloader = document.getElementById("preloadergif");
