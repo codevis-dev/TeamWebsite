@@ -1,0 +1,658 @@
+<html>
+  <head>
+    <title>codevis</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/favicon_package/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/favicon_package/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/favicon_package/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9d935363fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navbar" id="navbar">
+      <button class="hamburger" onclick="openNav()">
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+      </button>
+      <div class="logo">
+        <a href="../../" class="logo">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg
+            class="logo-svg"
+            version="1.1"
+            id="Ebene_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 1920 1080"
+            style="enable-background: new 0 0 1920 1080"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: none;
+              }
+              .st1 {
+                fill: #294762;
+              }
+              .st2 {
+                fill: #e65238;
+              }
+              .st3 {
+                fill: url(#SVGID_1_);
+              }
+              .st4 {
+                fill: #a8dadc;
+              }
+              .st5 {
+                fill: #e6e6e6;
+              }
+            </style>
+            <g id="Baba2_00000075862812243650940450000008594686658069554060_">
+              <path
+                class="st0"
+                d="M1626.49,347.65c0,0-221.06,126.78-333.25,192.4L1626.49,347.65z"
+              />
+              <path
+                class="st1"
+                d="M627.64,539.54L960,347.65c0,0-186.06-108.22-302.97-175.12c-18.72-10.71-41.72-10.67-60.39,0.11L323.8,330.16
+		c-18.75,10.82-30.29,30.83-30.29,52.47l0,349.82l333.24-192.4L627.64,539.54z"
+              />
+              <path
+                class="st2"
+                d="M293.51,732.45l302.95,174.91c18.75,10.82,41.84,10.82,60.59,0L960,732.45l-333.25-192.4L293.51,732.45z"
+              />
+              <polygon
+                class="st2"
+                points="626.75,540.05 293.51,732.45 626.75,540.05 	"
+              />
+              <linearGradient
+                id="SVGID_1_"
+                gradientUnits="userSpaceOnUse"
+                x1="626.751"
+                y1="631.5631"
+                x2="1626.4935"
+                y2="631.5631"
+              >
+                <stop offset="0" style="stop-color: #99cccc" />
+                <stop offset="1" style="stop-color: #a8dadc" />
+              </linearGradient>
+              <path
+                class="st3"
+                d="M1626.49,697.47l0-349.82l-333.25,192.4C1180.35,475.84,960,347.65,960,347.65L627.64,539.54l-0.89,0.52
+		L960,732.45l0,0l302.95,174.91c18.75,10.82,41.84,10.82,60.59,0l272.66-157.42C1614.95,739.12,1626.49,719.11,1626.49,697.47z"
+              />
+              <polygon
+                class="st4"
+                points="626.75,540.05 627.64,539.54 626.75,540.05 	"
+              />
+              <rect
+                x="793.37"
+                y="443.85"
+                class="st4"
+                width="0"
+                height="384.8"
+              />
+              <polygon
+                class="st4"
+                points="626.75,540.05 626.75,540.05 626.75,540.05 	"
+              />
+              <path
+                class="st5"
+                d="M1626.49,347.65l-302.95-174.91c-18.75-10.82-41.84-10.82-60.59,0L960,347.65l333.25,192.4
+		C1405.44,474.43,1626.49,347.65,1626.49,347.65z"
+              />
+              <path
+                class="st5"
+                d="M960,347.65c0,0,220.35,128.19,333.25,192.4L960,347.65z"
+              />
+            </g>
+          </svg>
+          <h5 class="logo-text">codevis</h5>
+        </a>
+      </div>
+      <div class="navigation visibility" id="navigation">
+        <a class="font2 bold nav-link" href="../../projects">Projekte</a>
+        <a class="font2 bold nav-link" href="../../about">Über Uns</a>
+        <button
+          class="font2 bold button1 navbar-button"
+          onclick="window.location.href='../../contact'"
+        >
+          Kontakt
+        </button>
+      </div>
+    </div>
+    <!-- End Navigation -->
+    <!-- Banner -->
+    <div class="mockup-section">
+      <div class="headercontainer">
+        <div class="catch-phrase mockup-header">
+          <img src="../../assets/TeamwebsiteBig.png" class="mockup-tw" />
+          <div class="square-orange2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="desk-icon2 icon-tabler icon-tabler-device-desktop"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#780000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="3" y="4" width="18" height="12" rx="1" />
+              <line x1="7" y1="20" x2="17" y2="20" />
+              <line x1="9" y1="16" x2="9" y2="20" />
+              <line x1="15" y1="16" x2="15" y2="20" />
+            </svg>
+          </div>
+          <h1 class="mockup-page-header">Teamwebsite</h1>
+          <h5 class="semibold no-margin mockup-page-subheading">
+            WEBSITE <span style="color: #e65238; font-size: 22">●</span> 2022
+          </h5>
+          <div class="mockup-page-container">
+            <div class="mockup-container-left">
+              <div class="mockup-tech">
+                <div class="mockupt1">
+                  <img src="../../assets/Html.png" class="mockup-tech-image" />
+                  <p class="medium mockup-text">HTML</p>
+                </div>
+                <div class="mockupt1">
+                  <img src="../../assets/CSS.png" class="mockup-tech-image" />
+                  <p class="medium mockup-text">CSS</p>
+                </div>
+                <div class="mockupt1">
+                  <img
+                    src="../../assets/JavaScript.png"
+                    class="mockup-tech-image"
+                  />
+                  <p class="mockup-text medium">JavaScript</p>
+                </div>
+              </div>
+              <p class="medium font2 mockup-subheading">
+                Unsere Website entwickelt sich stetig weiter und gilt für uns
+                als Spielplatz zum Ausprobieren neuer Designs.
+              </p>
+              <div class="mockup-tech">
+                <a target="_blank" href="https://codevis.de">
+                  <button class="mockup-button">
+                    <div class="mockup-button-container">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mockup-icon"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="3"
+                        stroke="#ebebeb"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"
+                        />
+                        <line x1="10" y1="14" x2="20" y2="4" />
+                        <polyline points="15 4 20 4 20 9" />
+                      </svg>
+                      <p class="mockup-text mockup-button-text font2 semibold">
+                        Live Site
+                      </p>
+                    </div>
+                  </button>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/codevis-dev/TeamWebsite"
+                >
+                  <button class="mockup-button">
+                    <div class="mockup-button-container">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mockup-icon"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="3"
+                        stroke="#ebebeb"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                        />
+                      </svg>
+                      <p class="mockup-text mockup-button-text font2 semibold">
+                        Github
+                      </p>
+                    </div>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="mockup-container-right">
+              <h5>Rollen</h5>
+              <p class="medium font2 mockup-role">
+                Max Breuning - Design, Entwicklung
+              </p>
+              <p class="medium font2 mockup-role">
+                Felix Hanusch - Entwicklung
+              </p>
+              <p class="medium font2 mockup-role">
+                Pascal Baumann - Entwicklung
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Banner -->
+    <!-- Story -->
+    <div class="ellipse blue2"></div>
+    <div class="blue2 ellipse-fix">
+      <div class="section section-about2 section-mockup">
+        <h5 class="mockup-titles">Ziel</h5>
+        <p class="aboutp">
+          Unser Ziel war es eine Website für unser Team zu erstellen, um einen
+          Ort zum präsentieren unserer Arbeit bzw. Projekte als eine Art
+          Portfolio zu haben. Zudem soll die Teamwebsite uns allen als
+          Spielwiese und zum ausprobieren von verschiedenen Technicken und
+          Designs dienen.
+        </p>
+        <h5 class="mockup-titles">Ablauf</h5>
+        <p class="aboutp">
+          Zuerst gab es bei uns die Überlegung was alles überhaupt auf die
+          Website soll und was wir damit darstellen wollen. Daraus erstellten
+          wir dann ein Konzept, womit wir dann erste Wireframes zur
+          verdeutlichen entwickelten. Folglich haben wir die besten dann weiter
+          entwickelt und als Prototypen für Mobile, Tablet und Desktop in Figma
+          designt. Die Frage wie wir dieses Design nun umsetzen wollen, lies uns
+          die Seite schlussendlich als einfache statische Seite mit HTML, CSS
+          und JS umsetzen.
+        </p>
+        <h5 class="mockup-titles">Probleme</h5>
+        <p class="aboutp">
+          Aufgrund der einfachen Umsetzung nur mit HTML, CSS und JS obwohl wir
+          mehrere Seiten haben, haben wir viel redundanten Code und nur sehr
+          schwer wartbaren Code erhalten. Das hat uns bei der Entwicklung sehr
+          viele Nerven gekostet und auch im Nachhinein finden wir die Lösung
+          nicht wirklich schön, weshalb auch ein Refactoring in weiterer Zukunft
+          mit einem Framework genauer React geplant ist. Ein weiteres Problem
+          war unser Zeitmanagement. Der ganze Prozess hat sich insgesamt
+          ziemlich in die Länge gezogen, weil wir die Größe der Website mit den
+          verschiedenen Unterseiten eine wenig unterschätzt haben.
+        </p>
+        <h5 class="mockup-titles">Learnings</h5>
+        <p class="aboutp">
+          Wir wollen in Zukunft versuchen, die Anforderungen zu Beginn besser zu
+          formulieren und dahingehend auch die passendere Technologien für die
+          Umsetzung unserer Projekte wählen, sodass schneller ein besseres und
+          einfacheres Produkt am Ende entsteht.
+        </p>
+      </div>
+    </div>
+    <!-- End Story -->
+    <!-- Footer -->
+    <div class="ellipse black"></div>
+    <div class="footer">
+      <button
+        class="button1 b1 footer-mobile-shown footer-button"
+        onclick="window.location.href='../../contact'"
+      >
+        <span class="footer-button-text">Kontakt</span>
+      </button>
+      <div class="end-logo">
+        <a href="../../" class="end-logo">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg
+            class="end-logo-svg"
+            version="1.1"
+            id="Ebene_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 1920 1080"
+            style="enable-background: new 0 0 1920 1080"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: none;
+              }
+              .st1 {
+                fill: #294762;
+              }
+              .st2 {
+                fill: #e65238;
+              }
+              .st3 {
+                fill: url(#SVGID_1_);
+              }
+              .st4 {
+                fill: #a8dadc;
+              }
+              .st5 {
+                fill: #e6e6e6;
+              }
+            </style>
+            <g id="Baba2_00000075862812243650940450000008594686658069554060_">
+              <path
+                class="st0"
+                d="M1626.49,347.65c0,0-221.06,126.78-333.25,192.4L1626.49,347.65z"
+              />
+              <path
+                class="st1"
+                d="M627.64,539.54L960,347.65c0,0-186.06-108.22-302.97-175.12c-18.72-10.71-41.72-10.67-60.39,0.11L323.8,330.16
+  c-18.75,10.82-30.29,30.83-30.29,52.47l0,349.82l333.24-192.4L627.64,539.54z"
+              />
+              <path
+                class="st2"
+                d="M293.51,732.45l302.95,174.91c18.75,10.82,41.84,10.82,60.59,0L960,732.45l-333.25-192.4L293.51,732.45z"
+              />
+              <polygon
+                class="st2"
+                points="626.75,540.05 293.51,732.45 626.75,540.05 	"
+              />
+              <linearGradient
+                id="SVGID_1_"
+                gradientUnits="userSpaceOnUse"
+                x1="626.751"
+                y1="631.5631"
+                x2="1626.4935"
+                y2="631.5631"
+              >
+                <stop offset="0" style="stop-color: #99cccc" />
+                <stop offset="1" style="stop-color: #a8dadc" />
+              </linearGradient>
+              <path
+                class="st3"
+                d="M1626.49,697.47l0-349.82l-333.25,192.4C1180.35,475.84,960,347.65,960,347.65L627.64,539.54l-0.89,0.52
+  L960,732.45l0,0l302.95,174.91c18.75,10.82,41.84,10.82,60.59,0l272.66-157.42C1614.95,739.12,1626.49,719.11,1626.49,697.47z"
+              />
+              <polygon
+                class="st4"
+                points="626.75,540.05 627.64,539.54 626.75,540.05 	"
+              />
+              <rect
+                x="793.37"
+                y="443.85"
+                class="st4"
+                width="0"
+                height="384.8"
+              />
+              <polygon
+                class="st4"
+                points="626.75,540.05 626.75,540.05 626.75,540.05 	"
+              />
+              <path
+                class="st5"
+                d="M1626.49,347.65l-302.95-174.91c-18.75-10.82-41.84-10.82-60.59,0L960,347.65l333.25,192.4
+  C1405.44,474.43,1626.49,347.65,1626.49,347.65z"
+              />
+              <path
+                class="st5"
+                d="M960,347.65c0,0,220.35,128.19,333.25,192.4L960,347.65z"
+              />
+            </g>
+          </svg>
+          <p class="end-logo-text">codevis</p>
+        </a>
+      </div>
+      <div class="footer-column-container">
+        <div class="footer-column footer-col1 footer-mobile-hidden">
+          <p class="footer-mobile-hidden">
+            Folge uns auf unseren Social Media Kanälen um nichts zu verpassen.
+          </p>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/company/codevis/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-media-icon icon-tabler icon-tabler-brand-linkedin"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <line x1="8" y1="11" x2="8" y2="16" />
+                <line x1="8" y1="8" x2="8" y2="8.01" />
+                <line x1="12" y1="16" x2="12" y2="11" />
+                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+              </svg>
+            </a>
+            <a href="https://twitter.com/codevis_de">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-media-icon icon-tabler icon-tabler-brand-twitter"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/codevis_de/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-media-icon icon-tabler icon-tabler-brand-instagram"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/Codevis-107326738664886">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-media-icon icon-tabler icon-tabler-brand-facebook"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                />
+              </svg>
+            </a>
+            <a href="https://github.com/Schlafschafe">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-media-icon icon-tabler icon-tabler-brand-github"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column footer-col2">
+          <h6 class="footer-mobile-hidden" id="fpad">Übersicht</h6>
+          <a class="footer-link" href="../../projects">Projekte</a>
+          <a class="footer-link" href="../../about">Über uns</a>
+          <a class="footer-link footer-mobile-hidden" href="../../contact"
+            >Kontakt</a
+          >
+        </div>
+        <div class="footer-column footer-col1 footer-mobile-shown">
+          <div class="social-media">
+            <a href="https://www.linkedin.com/company/codevis/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-media-icon icon-tabler icon-tabler-brand-linkedin"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <line x1="8" y1="11" x2="8" y2="16" />
+                <line x1="8" y1="8" x2="8" y2="8.01" />
+                <line x1="12" y1="16" x2="12" y2="11" />
+                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+              </svg>
+            </a>
+            <a href="https://twitter.com/codevis_de">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-media-icon icon-tabler icon-tabler-brand-twitter"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/codevis_de/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-media-icon icon-tabler icon-tabler-brand-instagram"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/Codevis-107326738664886">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-media-icon icon-tabler icon-tabler-brand-facebook"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                />
+              </svg>
+            </a>
+            <a href="https://github.com/Schlafschafe">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="social-media-icon icon-tabler icon-tabler-brand-github"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column footer-col3">
+          <h6 class="footer-mobile-hidden fpad">Rechtliches</h6>
+          <a class="footer-link" href="../../impressum">Impressum</a>
+          <a class="footer-link" href="../../dsgvo">Datenschutzerklärung</a>
+        </div>
+      </div>
+      <p class="footer-copyright">© codevis 2022</p>
+    </div>
+    <!-- End Footer -->
+  </body>
+  <script src="../../script.js"></script>
+</html>
