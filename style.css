@@ -1092,6 +1092,38 @@ button {
   margin: 0;
 }
 
+.mockup-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.mockup-section-left {
+  width: 40%;
+  padding: 0 50;
+}
+.mockup-section-right {
+  width: 50%;
+  padding: 0 50;
+}
+
+.mockup-space {
+  margin: 32 0;
+}
+
+.mockup-video {
+  position: relative;
+  width: 319px;
+  border-radius: 20px;
+  z-index: 1;
+  margin: 17px 93px;
+}
+
+.mockup-phone {
+  position: absolute;
+  width: 500px;
+  z-index: 2;
+}
+
 .mockup-header {
   width: 100%;
 }
@@ -1703,6 +1735,26 @@ button {
 
   .input-submit {
     font-size: 16px;
+  }
+
+  .mockup-section-left {
+    width: 50%;
+    padding: 0;
+  }
+  .mockup-section-right {
+    width: 40%;
+    padding: 0;
+  }
+
+  .mockup-video {
+    width: 80%;
+    margin: 4% 23%;
+  }
+
+  .mockup-phone {
+    position: absolute;
+    width: 40%;
+    z-index: 2;
   }
 
   .kachel {
@@ -2513,6 +2565,34 @@ button {
     margin-left: calc(0.50424 * 100vw + 503.225px);
   }
 
+  .mockup-row {
+    flex-direction: column;
+  }
+
+  .mockup-section-left {
+    width: 100%;
+  }
+  .mockup-section-right {
+    padding: 30 0 10 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  .mockup-video {
+    position: relative;
+    width: 42.5%;
+    margin: 0;
+  }
+
+  .mockup-phone {
+    position: absolute;
+    width: 50%;
+    margin-top: 1.5%;
+  }
+
   .project-last-child {
     margin-right: calc(50vw - 115px);
   }
@@ -2532,7 +2612,6 @@ button {
   .prm {
     font-size: 16px;
     margin-left: 16px;
-    margin-top: -1.5px;
   }
 
   .kind-icon2 {
@@ -2673,6 +2752,22 @@ button {
 
   .mockup-page-subheading {
     font-size: 22px;
+  }
+
+  .mockup-section-right {
+    padding: 20 0;
+  }
+
+  .mockup-video {
+    position: relative;
+    width: 73%;
+    margin: 0;
+  }
+
+  .mockup-phone {
+    position: absolute;
+    width: 85%;
+    margin-top: 2.6%;
   }
 
   .section-mockup {
