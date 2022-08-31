@@ -231,6 +231,24 @@ button {
   }
 }
 
+.info-icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2px;
+  flex-shrink: 0;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info {
+  color: #e65238;
+  padding: 0 10;
+}
+
 .button1 {
   border-width: 0px;
   color: #ebebeb;
@@ -1051,6 +1069,7 @@ button {
   margin: 20 0;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .mockupt1 {
@@ -1151,7 +1170,6 @@ button {
 }
 
 .mockup-tech-image {
-  width: 17;
   height: 17;
 }
 
@@ -1477,7 +1495,7 @@ button {
 
 .social-media-icon {
   padding: 0 7px 0 0;
-  transition: all 0.4s ease-out;
+  transition: stroke 0.4s ease-out;
 }
 .social-media-icon:hover {
   stroke: #e65238;
@@ -2653,6 +2671,10 @@ button {
     flex-direction: column-reverse;
   }
 
+  .mockup-container-left {
+    width: 100%;
+  }
+
   .story-left {
     width: auto;
     margin: 0;
@@ -2741,8 +2763,10 @@ button {
     font-size: 25px;
   }
 
-  .mockup-container-left {
-    width: 100%;
+  .info-icon {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.5px;
   }
 
   .mockup-section {
