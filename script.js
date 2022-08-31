@@ -17,6 +17,10 @@ const openNav = () => {
   }
 };
 
+const playVideo = () => {
+  document.getElementById("vid").play();
+};
+
 const validateEmail = (email) => {
   return email.match(
     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -27,7 +31,6 @@ const emailLabel = document.getElementById("email-label");
 const email = document.getElementById("email");
 if (email) {
   email.addEventListener("focusout", (event) => {
-    console.log(validateEmail(email.value));
     if (validateEmail(email.value)) {
       event.target.style.borderColor = "#a8dadc";
       event.target.style.borderWidth = "1px";
@@ -91,7 +94,6 @@ if (width < 780) {
 } else {
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
-    console.log(currentScrollPos, prevScrollpos);
     if (prevScrollpos > currentScrollPos || currentScrollPos < 20) {
       navbar.style.top = "0";
       navbar.style.backgroundColor = "hsla(214, 17%, 8%, 0.8)";
