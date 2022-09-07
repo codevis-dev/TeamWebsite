@@ -199,8 +199,7 @@
                 </div>
               </div>
               <p class="medium font2 mockup-subheading">
-                Unsere Website entwickelt sich stetig weiter und gilt für uns
-                als Spielplatz zum Ausprobieren neuer Designs.
+                Eine TicTacToe Multiplayer App entwickelt mit React Native und Firebase.
               </p>
               <div class="mockup-tech">
                 <a
@@ -265,15 +264,15 @@
             Es gibt im Prinzip nur die Möglichkeit Online mit einem anderen Spieler über eine spezielle  Lobby ID zu spielen.
           </p>
           <p class="aboutp">
-            Dabei generiert der eine Spieler die ID und der andere muss diesen dann bei sich in dem dafür vorgesehenem Feld eingeben
+            Dabei generiert ein Spieler die ID und der Gegner kann durch Eingabe der generierten ID dem Spiel beitreten.
           </p>
           <p class="aboutp">
-            Im Spiel sieht dann jeder Spieler sein jeweiliges Zeichen oben und jeder hat immer 30s Zeit um seinen Zug zu machen.</p>
+            Im Spiel sieht man im oberen Bereich wer am Zug ist und welches Symbol man hat. Ein Zug ist zeitlich auf 30 Sekunden begrenzt.</p>
           <p class="aboutp">
-            Am Ende gibt es dann die Möglichkeit noch ein Spiel zu spielen, sodass dann in der gleichen Lobby mit dem gleichen Spieler ein neues Spiel gestartet wird.
+            Am Ende gibt es dann die Möglichkeit auf ein Rematch...
           </p>
           <p class="aboutp">
-            Oder man kehrt zum Hautpmenü zurück nachdem man ausreichend Spaß hatte :D</p>
+            ...oder man kehrt zum Hautpmenü zurück nachdem man ausreichend Spaß hatte. :D</p>
           </p>
         </div>
         <div class="mockup-section-right">
@@ -292,35 +291,34 @@
       <div class="section section-about2 section-mockup">
         <h5 class="mockup-titles">Ziel</h5>
         <p class="aboutp">
-          Unser Ziel war es mit einem kleinen Online Multiplayergame FireBase
-          besser kennenlernen und vor allem zu schauen in wie fern es überhaupt
-          Möglich ist mit Firebase ein Multiplayergame zu erstellen.
+          Unser Ziel war es mit einem kleinen Online Multiplayergame Firebase
+          besser kennenlernen und allem voran zu schauen, inwiefern es überhaupt
+          Möglich ist mit Firestore (eine NoSQL-Cloud-Datenbank) ein Multiplayerspiel mit Updates in Echtzeit zu erstellen.
         </p>
         <h5 class="mockup-titles">Ablauf</h5>
         <p class="aboutp">
-          Anfangs haben wir uns überlegt mit was für einem einfachen Spiel man
+          Anfangs haben wir uns überlegt, mit welchem einfachen Spiel man
           Firebase am besten ausprobieren kann und sind dann schnell auf ein
-          einfaches TicTacToe Spiel gekommen. Damit das ganze nicht so
-          langweilig aussieht, haben wir dazu ein schlichtes modernes Design
+          einfaches TicTacToe gekommen. Damit das ganze nicht so
+          langweilig aussieht, haben wir dazu ein schlichtes, aber modernes Design
           erstellt. Dieses haben wir folglich schnell in React Native umgesetzt,
-          länger hat dabei die Umsetzung des Spielflusses im Firebase gedauert.
+          länger hat dabei die Umsetzung des Spielflusses in Firebase gedauert.
           Das haben wir aber trotzdem nach einigen kleinen Problemen gemeistert.
         </p>
         <h5 class="mockup-titles">Probleme</h5>
         <p class="aboutp">
-          Es gab Probleme mit Firebase, weil ... (Felix Input benötigt) Da am
-          Ende die App im Firebase verschiedene Anfragen gemacht werden, können
-          diese auch sehr leicht in der App manipuliert werden, was durchaus zu
-          sehr vielen Anfragen und somit Kosten für uns führen könnte. Das ganze
-          könnten wir mit einer Authentifizierung der User zum Start der App
-          umgehen, jedoch war dies nicht Ziel und Plan der App. Deshalb haben
-          wir uns entschieden die App nicht weiter zu veröffentlichen. Dafür
-          kann man aber den Code im GitHub sich anschauen und wenn man will mit
-          einem eigenen Firebase selbst ausprobieren.
+          Aufgrund einer fehlenden User-Authentifizierung, können wir keine Security
+          für unser Firebase einrichten. Somit könnten übermäßig viele Requests
+          über unsere App gestellt werden, was schnell unser Limit erschöpfen und
+          bei uns somit für unnötige Kosten sorgen würde. Da Authentifizierung nicht
+          Ziel des Projektes war, haben wir uns dazu entschieden das Projekt nicht zu
+          veröffentlichen. Die Ergebnisse wollten wir euch trotzdem nicht vorenthalten,
+          wer möchte kann den Code auf GitHub als Inspiration oder zum Ausprobieren
+          nutzen.
         </p>
         <h5 class="mockup-titles">Learnings</h5>
         <p class="aboutp">
-          Wir haben viel neues im Umgang mit Firebase gelernt (Input von Felix)
+          Wir haben viel neues im Umgang mit Firestore gelernt... <!-- (Input von Felix) -->
         </p>
       </div>
     </div>
