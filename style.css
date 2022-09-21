@@ -1181,8 +1181,10 @@ button {
 .mockup-titles {
   margin: 24 0 -8 0;
 }
-
 .mockup-tw {
+  display: none;
+}
+.mockup-tw-big {
   width: 1180px;
   margin-left: 0;
   margin-bottom: -350px;
@@ -1947,8 +1949,12 @@ button {
     max-width: 760px;
   }
 
+  .mockup-tw-big {
+    display: none;
+  }
   .mockup-tw {
-    width: 100%;
+    width: 760px;
+    display: block;
     margin-bottom: -240;
   }
 
