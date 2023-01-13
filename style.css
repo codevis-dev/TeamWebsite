@@ -144,24 +144,24 @@ h2 {
 h3 {
   margin: 0 0;
   font-weight: 600;
-  font-size: 44;
+  font-size: 44px;
 }
 
 h4 {
   margin: 0 0px;
   font-weight: 700;
-  font-size: 35;
+  font-size: 35px;
 }
 
 h5 {
   margin: 0;
   font-weight: 600;
-  font-size: 28;
+  font-size: 28px;
 }
 
 h6 {
   margin: 0 0 5 0;
-  font-size: 23;
+  font-size: 23px;
 }
 
 .bold {
@@ -181,32 +181,32 @@ h6 {
 }
 
 .font1 {
-  font-size: 20;
+  font-size: 20px;
 }
 
 .font2 {
   margin: 0 0;
-  font-size: 18;
+  font-size: 18px;
 }
 
 .font3 {
-  font-size: 14;
+  font-size: 14px;
 }
 
 .font4 {
-  font-size: 14;
+  font-size: 14px;
 }
 
 .font5 {
-  font-size: 13;
+  font-size: 13px;
 }
 
 .font6 {
-  font-size: 12;
+  font-size: 12px;
 }
 
 .font-form {
-  font-size: 35;
+  font-size: 35px;
 }
 
 a {
@@ -239,17 +239,17 @@ button {
   font-family: "Font Awesome 5 Free";
   font-style: normal !important;
   font-weight: 900;
-  font-size: 19;
+  font-size: 19px;
   padding: 0 16px;
 }
 
 .small-arrow {
-  font-size: 16;
+  font-size: 16px;
   padding: 0 8px;
 }
 
 .tiny-arrow {
-  font-size: 12;
+  font-size: 12px;
   padding: 0 4px;
 }
 
@@ -728,7 +728,7 @@ button {
   border-style: solid;
   border-radius: 14px;
   font-family: "Poppins" !important;
-  font-size: 18;
+  font-size: 18px;
   resize: none;
   box-sizing: border-box;
 }
@@ -1059,7 +1059,7 @@ button {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 18;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -1514,7 +1514,7 @@ button {
 .subheading {
   margin-top: 32px;
   line-height: 40px;
-  font-size: 21;
+  font-size: 21px;
 }
 
 .benefit-heading {
@@ -2159,14 +2159,14 @@ button {
   }
 
   .dsgvoh1 {
-    font-size: 36;
+    font-size: 36px;
   }
 
   .dsgvoh3 {
-    font-size: 32;
+    font-size: 32px;
   }
   .dsgvoh5 {
-    font-size: 21;
+    font-size: 21px;
   }
 
   h1 {
@@ -2570,12 +2570,12 @@ button {
   }
 
   .nav-link {
-    font-size: 22;
+    font-size: 22px;
     margin: 50px;
   }
 
   .navbar-button {
-    font-size: 22;
+    font-size: 22px;
     margin: 25;
     width: 240px;
     height: 60px;
@@ -2837,7 +2837,7 @@ button {
   }
 
   .techhead {
-    font-size: 36;
+    font-size: 36px;
   }
 
   .why-text {
@@ -2869,18 +2869,18 @@ button {
     font-size: calc(100vw * 0.065);
   }
   .dsgvop {
-    font-size: 14;
+    font-size: 14px;
   }
 
   .mini {
-    font-size: 12;
+    font-size: 12px;
   }
 
   .dsgvoh3 {
-    font-size: 24;
+    font-size: 24px;
   }
   .dsgvoh5 {
-    font-size: 20;
+    font-size: 20px;
   }
 
   .aboutp {

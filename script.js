@@ -108,13 +108,13 @@ if (width < 780) {
   };
 }
 
-let loader = document.getElementById("preloader");
+/* let loader = document.getElementById("preloader");
 let gifloader = document.getElementById("preloadergif");
 
 window.addEventListener("load", function () {
   loader?.classList.add("loaded");
   gifloader?.classList.add("gifloaded");
-});
+}); */
 
 const kachel = document.querySelectorAll(".kachel");
 for (let i = 0; i < kachel.length; i++) {
